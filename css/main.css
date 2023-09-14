@@ -13,6 +13,7 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
+    transition: all .6s ease-in-out;
 }
 
 *{
@@ -55,9 +56,29 @@ a{
 
 button, input{
     padding: 0;
-    background-color: none;
+    background-color: inherit;
     border: 0;
 }
+
+.dark-mode {
+    background-color: #333; /* Couleur de fond sombre */
+    color: white; /*Couleur du texte en mode sombre */
+    
+}
+
+.dark-mode h1 {
+    color:#BFB8B4; /*Couleur du texte du titre en mode sombre*/
+}
+
+.dark-mode section ul.list-logo li {
+    background-color: #444; /*Fond des logos en mode sombre*/
+}
+
+.dark-mode section ul.list-logo li img {
+    filter: invert(1); /*Inverser la couleur des images en mode sombre*/
+}
+
+
 :root{
     --bgcolor-theme: #040404;
     --text-color: #fff;
