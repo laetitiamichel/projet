@@ -33,7 +33,7 @@ main{
 .section,header,h2{
     font-size: 20px;
     padding-left: 15%;
-    padding-top: 10%;
+    padding-top: 20%;
 }
 .div,nav{
     background-color: #BFB8B4;
@@ -50,11 +50,25 @@ button{
     padding-top: 5%;
     padding-right: 5%;
 }
-.section,a,img{
-    width: 10%; /* Définissez la largeur du logo */
-    height: 10%; /* Définissez la hauteur du logo */
-    /*margin-right: 10px; Ajoutez une marge à droite pour l'espace entre le logo et d'autres éléments */
+/* Utilisez flexbox pour aligner les logos côte à côte */
+.reseaux-sociaux {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Alignement horizontal au centre */
+    align-items: flex-end; /* Alignement vertical au centre */
+    
 }
+
+.reseaux-sociaux li {
+    margin: 0 10px; /* Marge horizontale entre les logos */
+}
+
+.reseaux-sociaux img {
+    width: 30px; 
+    height: 30px; 
+}
+
 
 footer{
     background-color: #BFB8B4;
