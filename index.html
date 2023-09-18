@@ -3,43 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="portfolio Laetitia MICHEL">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Portfolio</title>
 </head>
-<body>
-    <header>
-        <h1>
-            Portfolio développeur
-            <button aria-label="light mode" class="light-mode">
-                <span class="material-symbols-outlined">
-                    flare
-                    </span>
-                    
-            </button>
-        </h1>
-    </header>
+<body class="homepage">
     <main>
-        <section>
-            <h2>Présentation</h2>
-            <p>
-                De formation scientifique, j'ai évolué dans le domaine du commerce durant une dizaine d'années.
-Puis j'ai crée et développé ma marque de bijoux "Rue Gabrielle".
-Aujourd'hui, je souhaite m'orienter vers un métier d'avenir et d'opportunité dans l'IT developpement.
-            </p>
+        <section div="coteGauche">
+            <header class="presentation">
+                <h1>
+                    Portfolio développeur
+                    <button aria-label="light mode" class="light-mode">
+                        <span class="material-symbols-outlined">
+                            flare
+                            </span>
+                            
+                    </button>
+                </h1>
+                <h2>
+                    Laëtitia MICHEL
+                    <ul>
+                        <li><a href="">lien</a></li>
+                        <li><a href="">lien</a></li>
+                        <li><a href="">lien</a></li>
+                    </ul>
+                </h2>
+            </header>
         </section>
 
-        <section>
+    <nav div="page de droite">
+        <button aria-label="menu-principal" class="menu-principal">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+        <ul>
+            <li><a href="">item 1</a></li>
+            <li><a href="">item 2</a></li>
+            <li><a href="">item 3</a></li>
+            <li><a href="">item 4</a></li>
+        </ul>
+    </nav>
+
+        <!--<section>
             <h3>
                 Logos
             </h3>
             <ul class="gallery-primary-logo">
-                <!-- raccourci pour créer une liste = section>ul>li* XFOIS>img-->
+                raccourci pour créer une liste = section>ul>li* XFOIS>img
                 <li><img src="https://placehold.jp/73655D/ffffff/200x200.png" alt="logo java" loading="lazy"></li>
                 <li><img src="https://placehold.jp/73655D/ffffff/200x200.png" alt="logo php" loading="lazy"></li>
                 <li><img src="https://placehold.jp/73655D/ffffff/200x200.png" alt="logo html" loading="lazy"></li>
@@ -48,7 +65,7 @@ Aujourd'hui, je souhaite m'orienter vers un métier d'avenir et d'opportunité d
                 <li><img src="https://placehold.jp/73655D/ffffff/200x200.png" alt="" loading="lazy"></li>
             </ul>
         </section>
-        <!--<div class="form" role="section" aria-describedby="form">
+        <div class="form" role="section" aria-describedby="form">
              fieldset obligatoire pour l'accesibilité commande vocale -->
             <!--<fieldset id="form">
                 <legend>
@@ -67,11 +84,11 @@ Aujourd'hui, je souhaite m'orienter vers un métier d'avenir et d'opportunité d
             </fieldset>
         </div>-->
     </main>
-    <footer>
+    <!--<footer>
         <p>
             &copy; - MIT - <time datetime="2023-09-07">2023</time>
         </p>
-    </footer>
+    </footer>!-->
     <script src="./src/app.js"></script>
 </body>
 </html>
