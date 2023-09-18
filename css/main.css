@@ -1,22 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Freehand&family=Roboto+Slab:wght@100;200;300&family=Roboto:wght@100;300;400&family=Yanone+Kaffeesatz:wght@200;300&display=swap')
-
-html{ /* sélecteur propriété valeur */
-    font-size: 62.5%;  /* 1.000rem root em 10px */
-}
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Freehand&family=Roboto+Slab:wght@100;200;300&family=Roboto:wght@100;300;400&family=Yanone+Kaffeesatz:wght@200;300&display=swap');
 
 body{
+    font: 'Roboto', sans-serif;
     height: 100vh;
-    width: 100%;
     margin: 0;
-    padding: 0;
 }
 
 /**{
     box-sizing: border-box;
 }*/
 main{
-   /* max-width: 120rem;
-    margin: auto;*/
+   max-width: 120rem;
+    margin: auto;
     
 }
 .div,section{
@@ -25,7 +20,8 @@ main{
     width: 50%;         /* Fait prendre à la section la moitié de la largeur de la page */
     height: 100vh; /* l'option vh permet de mettre la section sur toute la hauteur de la page web*/
     color: #BFB8B4;
-    font-family: 
+   /* font: 'Roboto', sans-serif;*/
+    
     
 }
 .section,header,h1{
@@ -53,6 +49,11 @@ button{
     float: right;
     padding-top: 5%;
     padding-right: 5%;
+}
+.section,a,img{
+    width: 10%; /* Définissez la largeur du logo */
+    height: 10%; /* Définissez la hauteur du logo */
+    /*margin-right: 10px; Ajoutez une marge à droite pour l'espace entre le logo et d'autres éléments */
 }
 
 footer{

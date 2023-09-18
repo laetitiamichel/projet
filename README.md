@@ -1,5 +1,5 @@
 # projet
-portfolio [home page](http://127.0.0.1:5500/index.html)
+portfolio [home page]( https://laetitiamichel.github.io/projet/)
 
 Gloomaps [structure](https://www.gloomaps.com/sDKps9wzRm)
 ## PRESENTATION
@@ -7,7 +7,7 @@ Gloomaps [structure](https://www.gloomaps.com/sDKps9wzRm)
 ## CHARTE GRAPHIQUE
 ![charteGraphique](/asset/chartreGraphique.png)
 ## CHARTE TYPO
-![charteTypo](/asset/chartre_typo.png)
+![charteTypo](/asset/chartre_typo.png)(https://fonts.google.com/specimen/Fredericka+the+Great?preview.text=1&preview.text_type=custom&stroke=Serif)
 insérer du code = ``` + langage code ```
 ![typo](/asset/Yanone_kaffeesatz_typo.png)
 
