@@ -7,6 +7,6 @@ document.addEventListener("DOMContentLoaded", e => {
 
     // Ajoutez un gestionnaire d'événements pour basculer le mode sombre
     toggleDarkModeButton.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode'); /* ici on fait appel à la class du CSS*/
+        document.body.classList.toggle('dark-mode'); /* ici on fait appel à la classe darkmode du CSS*/
     });
 });
