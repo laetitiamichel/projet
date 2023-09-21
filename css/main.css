@@ -8,7 +8,12 @@ body{
     margin: 0;
     letter-spacing: 5px;
 }
-
+:root{
+  --bgcolor-theme: #BFB8B4;
+  --bgcolor: #fff;
+  --text-color: #73655D;
+  --text-deux: #0D0A08;
+}
 /**{
     box-sizing: border-box;
 }*/
@@ -18,11 +23,11 @@ main{
     
 }
 .div,section{
-    background-color: #362921;
+    background-color: var(--bgcolor );
     float: left;       /* Déplace la section vers la gauche */
     width: 50%;         /* Fait prendre à la section la moitié de la largeur de la page */
     height: 100vh; /* l'option vh permet de mettre la section sur toute la hauteur de la page web*/
-    color: #BFB8B4;
+    color: var(--text-color);
    /* font: 'Roboto', sans-serif;*/
     
     
@@ -44,7 +49,7 @@ main{
     
 }
 .div,nav{
-    background-color: #BFB8B4;
+    background-color: var(--bgcolor-theme);
     float: right;       /* Déplace la section vers la droite */
     width: 50%;         /* Fait prendre à la section la moitié de la largeur de la page */
     height: 100vh;
@@ -85,7 +90,7 @@ main{
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #616161;
+    background-color: var(--text-deux);
     transition-duration: .60s;
   }
   .menu__btn > span::before {
@@ -106,14 +111,14 @@ main{
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #fff;
+    background-color: var(--text-color);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .6s;
   }
   .menu__item {
     display: block;
     padding: 12px 24px;
-    color: #362921;
+    color: var(--bgcolor);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -121,7 +126,7 @@ main{
     transition-duration: .60s;
   }
   .menu__item:hover {
-    background-color: #BFB8B4;
+    background-color: var(--bgcolor-theme);
   }
 
 
@@ -185,30 +190,26 @@ a{
 button, input{
     padding: 0;
     background-color: inherit;
+    color : var(--text-deux);
     border: 0;
     cursor: pointer;
-}
-
-.dark-mode {
-    background-color: #960b0b; /* Couleur de fond sombre */
-    color: white; /*Couleur du texte en mode sombre */
     
 }
 
-.dark-mode h1 {
-    color:#BFB8B4; /*Couleur du texte du titre en mode sombre*/
+.dark-mode{
+    background-color: var(--text-deux);
+    color: var(--bgcolor); /*Couleur du texte du titre en mode sombre*/
 }
 
 .dark-mode section ul.list-logo li {
-    background-color: #444; /*Fond des logos en mode sombre*/
+    background-color: var(--bgcolor); /*Fond des logos en mode sombre*/
 }
 
 .dark-mode section ul.list-logo li img {
     filter: invert(1); /*Inverser la couleur des images en mode sombre*/
 }
-
-
-:root{
-    --bgcolor-theme: #040404;
-    --text-color: #fff;
+.dark-mode {
+  background-color: var(--text-deux); /* Couleur de fond sombre */
+  color: white; /*Couleur du texte en mode sombre */ 
+  filter:grayscale(100%); 
 }
