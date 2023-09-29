@@ -4,6 +4,7 @@
 @import url('https://fonts.cdnfonts.com/css/hello-good-old-outline');
 html{ /* sélecteur propriété valeur */
   font-size: 62.5%;  /* 1.000rem root em 10px */
+  scroll-behavior: smooth;
 }
 body{
     font: 1.6rem sans-serif;
@@ -20,6 +21,9 @@ body{
 /**{
     box-sizing: border-box;
 }*/
+h1,h2,h3{
+  margin: 0;
+}
 main{
    max-width: 120rem;
     margin: auto;
@@ -40,6 +44,32 @@ header > h1{
     padding-top: 10rem;
     line-height: 1.5;
 }
+button, input{
+  padding: 0;
+  background-color: inherit;
+  color : var(--text-deux);
+  border: 0;
+  cursor: pointer;
+  
+}
+
+.dark-mode{
+  background-color: var(--text-deux);
+  color: var(--bgcolor); /*Couleur du texte du titre en mode sombre*/
+}
+
+.dark-mode section ul.list-logo li {
+  background-color: var(--bgcolor); /*Fond des logos en mode sombre*/
+}
+
+.dark-mode section ul.list-logo li img {
+  filter: invert(1); /*Inverser la couleur des images en mode sombre*/
+}
+.dark-mode {
+background-color: var(--text-deux); /* Couleur de fond sombre */
+color: white; /*Couleur du texte en mode sombre */ 
+filter:grayscale(100%); 
+}
 header > h2{
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
@@ -47,6 +77,7 @@ header > h2{
     padding-top: 20%;
     
 }
+
 /* Utilisez flexbox pour aligner les logos côte à côte */
 .reseaux-sociaux {
   list-style: none;
@@ -56,7 +87,6 @@ header > h2{
   align-items: flex-end; /* Alignement vertical au centre */
   
 }
-
 .reseaux-sociaux li {
   margin: 0 10px; /* Marge horizontale entre les logos */
 }
@@ -141,6 +171,17 @@ nav.page_de_droite{
     background-color: var(--bgcolor-theme);
   }
 
+.presentation{
+    /* background-color: var(--bgcolor-theme); */
+            /* Fait prendre à la section la moitié de la largeur de la page */
+    height: 100vh;
+    color: #362921;
+    
+    }
+    .presentation h3{
+      padding: 1rem 0;
+      text-align: center;
+    }
 .mask{
   overflow: hidden;
 }
@@ -156,6 +197,12 @@ footer{
     width: 50%;         
     box-sizing: border-box;
 }
+
+
+
+
+
+
 
 /*h1,h2,h3,h4,p,ol,ul,li,figure{
     margin: 0;
@@ -187,29 +234,3 @@ a{
     color: #222;
 }
 */
-button, input{
-    padding: 0;
-    background-color: inherit;
-    color : var(--text-deux);
-    border: 0;
-    cursor: pointer;
-    
-}
-
-.dark-mode{
-    background-color: var(--text-deux);
-    color: var(--bgcolor); /*Couleur du texte du titre en mode sombre*/
-}
-
-.dark-mode section ul.list-logo li {
-    background-color: var(--bgcolor); /*Fond des logos en mode sombre*/
-}
-
-.dark-mode section ul.list-logo li img {
-    filter: invert(1); /*Inverser la couleur des images en mode sombre*/
-}
-.dark-mode {
-  background-color: var(--text-deux); /* Couleur de fond sombre */
-  color: white; /*Couleur du texte en mode sombre */ 
-  filter:grayscale(100%); 
-}
