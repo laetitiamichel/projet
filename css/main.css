@@ -11,6 +11,7 @@ body{
     height: 100vh;
     margin: 0;
     letter-spacing: 5px;
+    position: relative;
 }
 :root{
   --bgcolor-theme: #BFB8B4;
@@ -40,8 +41,9 @@ header{
 }
 header > h1{
     font-family: 'Fredericka the Great', sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     padding-top: 10rem;
+    padding-left: 2rem;
     line-height: 1.5;
 }
 button, input{
@@ -72,7 +74,7 @@ filter:grayscale(100%);
 }
 header > h2{
     font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     padding-left: 15%;
     padding-top: 20%;
     
@@ -83,7 +85,7 @@ header > h2{
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: center; /* Alignement horizontal au centre */
+  justify-content: center ; /* Alignement horizontal au centre */
   align-items: flex-end; /* Alignement vertical au centre */
   
 }
@@ -178,7 +180,7 @@ nav.page_de_droite{
     color: #362921;
     
     }
-    .presentation h3{
+h3{
       padding: 1rem 0;
       text-align: center;
     }

@@ -1,2 +1,22 @@
 src/ 
 node_modules/
+
+<!--  <div class="form" role="section" aria-describedby="form">
+            fieldset obligatoire pour l'accesibilité commande vocale -->
+        
+            <!--<fieldset id="form">
+            <legend>
+                Rechercher ici
+            </legend>
+                method est la methode d'envoi, post = envoyer l'info dans un serveur : 
+            get = rechercher dans la page -->
+
+            <!--<form action="https://www.google.com/search?" method="get">
+                    le label sert renvoyer le cursur sur le champ 
+                <label for="search"> Recherche sur le site </label>
+                <input type="search" name="q" id="search" placeholder="search" aria-required="true">
+                <input type="submit" value="Chercher">
+
+            </form>
+        </fieldset>
+    </div>-->

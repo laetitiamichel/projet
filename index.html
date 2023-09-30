@@ -65,33 +65,34 @@
 </div>
 <!-- theme -->
 <main>
-
-    <!--  <div class="form" role="section" aria-describedby="form">
-            fieldset obligatoire pour l'accesibilité commande vocale -->
-        
-            <!--<fieldset id="form">
-            <legend>
-                Rechercher ici
-            </legend>
-                method est la methode d'envoi, post = envoyer l'info dans un serveur : 
-            get = rechercher dans la page -->
-
-            <!--<form action="https://www.google.com/search?" method="get">
-                    le label sert renvoyer le cursur sur le champ 
-                <label for="search"> Recherche sur le site </label>
-                <input type="search" name="q" id="search" placeholder="search" aria-required="true">
-                <input type="submit" value="Chercher">
-
-            </form>
-        </fieldset>
-    </div>-->
 <section class="presentation">
-        <h3 id="presentation">présentation</h3>
+        <h3 id="presentation">Présentation</h3>
+        <div class="row">
+            <div class="col-4">
+              <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">Item 1</h4>
+                <p>...</p>
+                <h4 id="list-item-2">Item 2</h4>
+                <p>...</p>
+                <h4 id="list-item-3">Item 3</h4>
+                <p>...</p>
+                <h4 id="list-item-4">Item 4</h4>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
     </section>
 <section class="projets">
-        <h3>projets</h3>
+        <h3>Projets</h3>
 </section>
-
 </main>
 <!--<footer>
     <p>
