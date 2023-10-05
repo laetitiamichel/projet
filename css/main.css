@@ -83,10 +83,10 @@ header > h2{
 /* Utilisez flexbox pour aligner les logos côte à côte */
 .reseaux-sociaux {
   list-style: none;
-  padding: 0;
+  padding: 10rem;
   display: flex;
-  justify-content: center ; /* Alignement horizontal au centre */
-  align-items: flex-end; /* Alignement vertical au centre */
+  justify-content: space-evenly; /* Alignement horizontal au centre */
+  align-items: end; /* Alignement vertical au centre */
   
 }
 .reseaux-sociaux li {
@@ -173,17 +173,34 @@ nav.page_de_droite{
     background-color: var(--bgcolor-theme);
   }
 
-.presentation{
-    /* background-color: var(--bgcolor-theme); */
-            /* Fait prendre à la section la moitié de la largeur de la page */
-    height: 100vh;
-    color: #362921;
-    
-    }
-h3{
-      padding: 1rem 0;
-      text-align: center;
-    }
+h3#presentation{
+  text-align: center;
+  background-color: #73655D;
+  color: white;
+  position: sticky;
+  padding: 3rem;
+  /*top: 0;*/
+  left: 0;
+}
+.texte {
+  width: 50%;
+  height: 50rem;
+  overflow-y: scroll;
+  float:right;
+  background-color: #362921;
+}
+h3#projects{
+  display:block;
+  padding: 3rem 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: 1em 0;
+}
 .mask{
   overflow: hidden;
 }
