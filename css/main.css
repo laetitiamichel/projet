@@ -1,0 +1,304 @@
+@import url('https://fonts.cdnfonts.com/css/fredericka-the-great');
+@import url('https://fonts.cdnfonts.com/css/bethalora');
+@import url('https://fonts.cdnfonts.com/css/avocade');
+@import url('https://fonts.cdnfonts.com/css/hello-good-old-outline');
+
+/* RESET */
+
+html{ /* sélecteur propriété valeur */
+  font-size: 62.5%;  /* 1.000rem root em 10px */
+  scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem sans-serif;
+    height: 100vh;
+    margin: 0;
+    letter-spacing: 5px;
+    position: relative;
+}
+h1,h2,h3{
+  margin: 0;
+}
+main{
+   max-width: 120rem;
+    margin: auto;
+    
+}
+:root{
+  --bgcolor-theme: #BFAE9F;
+  --bgcolor: #fff;
+  --text-color: #73655D;
+  --text-deux: #0d0a08;
+}
+/**{
+    box-sizing: border-box;
+}*/
+/*MENU BURGER*/
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-deux);
+  transition-duration: .60s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: var(--text-color);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .6s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: var(--bgcolor);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .60s;
+}
+.menu__item:hover {
+  background-color: var(--bgcolor-theme);
+}
+
+/* THEME */
+
+/* HEADER*/
+header{
+    background-color: var(--bgcolor );
+    float: left;       /* Déplace la section vers la gauche */
+    width: 50%;         /* Fait prendre à la section la moitié de la largeur de la page */
+    height: 100vh; /* l'option vh permet de mettre la section sur toute la hauteur de la page web*/
+    color: var(--text-color);
+   
+   /* font: 'Roboto', sans-serif;*/    
+}
+header > h1{
+    font-family: 'Fredericka the Great', sans-serif;
+    font-size: 4rem;
+    padding-top: 10rem;
+    padding-left: 2rem;
+    line-height: 1.5;
+}
+header > h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  padding-left: 15%;
+  padding-top: 20%;
+  
+}
+/* MISE EN PAGE PAGE DE DROITE */
+nav.page_de_droite{ 
+  float: right;       /* Déplace la section vers la droite */
+  width: 50%;         /* Fait prendre à la section la moitié de la largeur de la page */
+  height: 100vh;
+}
+
+.imageFond img{
+  display: inline-block;
+  width: 100%;
+}
+
+/* SCROLL 2 */
+
+/* THEME PRESENTATION */
+
+.presentation-primary{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 6rem;
+  background-color: #73655D;
+  color: white;
+  text-align: center;
+}
+nav.droite-presentation{
+  width: 50%;
+  height: 50rem;
+  float: left;
+}
+
+div.gauche-presentation{
+  width: 50%;
+  height: 50rem;
+  overflow-y: auto; 
+  position:sticky; 
+  float: left;
+  background-color: var(--bgcolor-theme);
+}
+
+/* THEME PROJETS */
+h3#proj-theme{
+  text-align: center;
+  background-color: #73655D;
+  color: white;
+  position: sticky;
+  width: 100%;
+  padding: 3rem;
+  left: 0;
+}
+
+/* THEME ENTREPRISE */
+h3#entreprise-theme{
+  text-align: center;
+  background-color: #73655D;
+  color: white;
+  position: sticky;
+  width: 100%;
+  padding: 3rem;
+  left: 0;
+}
+
+/* THEME VEILLE TECHNO */
+h3#veilleTechno-theme{
+  text-align: center;
+  background-color: #73655D;
+  color: white;
+  position: sticky;
+  width: 100%;
+  padding: 3rem;
+  left: 0;
+}
+
+.mask{
+  overflow: hidden;
+}
+
+/* FOOTER */
+footer{
+    background-color: #BFB8B4;
+    float: right;       
+    width: 50%;         
+    box-sizing: border-box;
+}
+
+
+
+/* CONFIGURATION DARK MODE */
+/* curseur bouton dark mode */
+button, input{
+  padding: 0;
+  background-color: inherit;
+  color : var(--text-deux);
+  border: 0;
+  cursor: pointer;
+  
+}
+
+.dark-mode{
+  background-color: var(--text-deux);
+  color: var(--bgcolor); /*Couleur du texte du titre en mode sombre*/
+}
+
+.dark-mode section ul.list-logo li {
+  background-color: var(--bgcolor); /*Fond des logos en mode sombre*/
+}
+
+.dark-mode section ul.list-logo li img {
+  filter: invert(1); /*Inverser la couleur des images en mode sombre*/
+}
+.dark-mode {
+background-color: var(--text-deux); /* Couleur de fond sombre */
+color: white; /*Couleur du texte en mode sombre */ 
+filter:grayscale(100%); 
+}
+
+/* CONFIGURATION ICONES RESEAUX SOCIAUX */
+
+.reseaux-sociaux {
+  list-style: none;
+  padding: 10rem;
+  display: flex;
+  justify-content: space-evenly; /* Alignement horizontal au centre */
+  align-items: end; /* Alignement vertical au centre */
+  
+}
+.reseaux-sociaux li {
+  margin: 0 10px; /* Marge horizontale entre les logos */
+}
+
+
+
+
+
+
+
+
+
+/*h1,h2,h3,h4,p,ol,ul,li,figure{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
+}
+header h1, footer{
+    text-align: left;
+}*/
+
+/*section ul.gallery-primary-logo{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+section ul.gallery-primary-logo li{
+    clip-path: ellipse(130px 140px at 10% 20%);
+    cursor: pointer;
+    /*filter: drop-shadow(0 0 0.60rem)
+}
+section ul.gallery-primary-logo img{
+    width: 100%;
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+*/
