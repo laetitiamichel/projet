@@ -140,31 +140,29 @@ nav.page_de_droite{
   height: 100vh;
 }
 
-.imageFond img{
-  display: inline-block;
-  width: 100%;
-}
+
 
 /* SCROLL 2 */
 
 /* THEME PRESENTATION */
-
+/*H3*/
 .presentation-primary{
 
   top: 0;
   left: 0;
   width: 100%;
   line-height: 6rem;
-  background-color: #73655D;
+  background-color: var(--bgcolor-theme);
   color: white;
   text-align: center;
 }
+/* PAGE DE DROITE PRESENTATION = SCROLL */
 nav.droite-presentation{
   width: 50%;
   height: 50rem;
   float: left;
 }
-
+/* PAGE DE GAUCHE PRESENTATION = PHOTO */
 div.gauche-presentation{
   width: 50%;
   height: 50rem;
@@ -172,7 +170,17 @@ div.gauche-presentation{
   position:sticky; 
   float: left;
   background-color: var(--bgcolor-theme);
+  text-align: center;
+  line-height: 4rem;
 }
+/* IMAGE PRESENTATION */
+.imageFond img{
+  display: inline-block;
+  justify-content: center;
+  width: 100%;
+  
+}
+
 
 /* THEME PROJETS */
 h3#proj-theme{
@@ -183,6 +191,11 @@ h3#proj-theme{
   width: 100%;
   padding: 3rem;
   left: 0;
+}
+p.texte-presentation img{
+  background-color: var(--bgcolor-theme);
+  display: block;
+  width: 20%;
 }
 
 /* THEME ENTREPRISE */
