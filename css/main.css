@@ -34,6 +34,13 @@ main{
     box-sizing: border-box;
 }*/
 /*MENU BURGER*/
+.hamburger-menu{
+  position:fixed;
+  z-index: 10;
+  display:block;
+  width:60%;
+  margin:auto;
+}
 #menu__toggle {
   opacity: 0;
 }
@@ -104,6 +111,7 @@ main{
   transition-duration: .60s;
 }
 .menu__item:hover {
+  
   background-color: var(--bgcolor-theme);
 }
 
@@ -169,7 +177,7 @@ div.gauche-presentation{
   overflow-y: auto; 
   position:sticky; 
   float: left;
-  background-color: var(--bgcolor-theme);
+  background-color: var(--bgcolor);
   text-align: center;
   line-height: 4rem;
 }
