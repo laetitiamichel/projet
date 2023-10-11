@@ -12,19 +12,5 @@ console.log("ok");
 document.body.classList.toggle('dark-mode'); // ici on fait appel à la classe darkmode du CSS
 });
 
-/* const { Button } = require("bootstrap"); */
-  /*   const carousel = new bootstrap.Carousel('#myCarousel')
-    const carouselExampleCaptions = document.querySelectorAll('Button')
-    data-bs-target.addEventListener('click', () =>{
-        console.log("ok");
-        document.body.classList.toggle('#carouselExampleCaptions')
-    }) */
-
-// Script to open and close sidebar
-const togglemenuBtn = document.getElementById("mySidebar")
-togglemenuBtn.addEventListener('click', () => {
-    document.body.classList.toggle('w3-sidebarw3-blackw3-animate-rightw3-xxlarge')
-})
-    
     
 });
