@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
+/*  body {
+	/*  background: black; 
+     background: url(../asset/cover.jpg) no-repeat fixed center center  / cover;
+	 overflow: hidden;
+} */
+ .containCube {
+	 position: relative;
+	 height: 100vh;
+	 width: 100%;
+	 perspective: 800px;
+}
+.cube img{
+    height: 300px;
+    width: 300px;
+}
+ .containCube .cube {
+	 position: absolute;
+	 height: 300px;
+	 width: 300px;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 margin: auto;
+	 box-sizing: border-box;
+	 transform-style: preserve-3d;
+	 transform-origin: 50% 50%;
+	 animation: rotate 20s ease-in-out infinite alternate;
+}
+ .containCube .cubeGroup {
+	 position: absolute;
+	 display: grid;
+	 box-sizing: border-box;
+	 height: 100%;
+	 width: 100%;
+	 font-family: "Baloo Bhai", cursive;
+	 color: white;
+	 text-shadow: 0 0 1px black;
+	 border: 3px solid white;
+}
+
+ .containCube .cubeGroup h2 {
+	 margin: auto;
+     text-align: center;
+}
+ .containCube .cube-front {
+	 transform: translatez(150px);
+}
+ .containCube .cube-rear {
+	 transform: translatez(-150px) rotatey(180deg);
+}
+ .containCube .cube-right {
+	 transform-origin: 100%;
+	 transform: rotatey(90deg) translatex(150px);
+}
+ .containCube .cube-left {
+	 transform-origin: 0%;
+	 transform: rotatey(-90deg) translatex(-150px);
+}
+ .containCube .cube-bottom {
+	 transform-origin: 50% 100%;
+	 transform: rotatex(-90deg) translatey(150px);
+}
+ .containCube .cube-top {
+	 transform-origin: 50% 0%;
+	 transform: rotatex(90deg) translatey(-150px);
+}
+ .containCube .cube-1 {
+	 /*background: rgba(76, 205, 246, 0.9);*/
+     box-shadow: inset 0 0 3rem #222;
+}
+ .containCube .cube-2 {
+	 /*background: rgba(99, 26, 245, 0.9);*/
+     box-shadow: inset 0 0 3rem #222;
+}
+ .containCube .cube-3 {
+	 /*background: rgba(196, 243, 179, 0.9);*/
+     box-shadow: inset 0 0 3rem #222;
+}
+ .containCube .cube-4 {
+	 /*background: rgba(37, 160, 119, 0.9);*/
+     box-shadow: inset 0 0 3rem #222;
+}
+ .containCube .cube-5 {
+	 /*background: rgba(200, 218, 199, 0.9);*/
+     box-shadow: inset 0 0 3rem #222;
+}
+ .containCube .cube-6 {
+	 /*background: rgba(217, 101, 181, 0.9);*/
+     box-shadow: inset 0 0 3rem #222;
+}
+ @keyframes rotate {
+	 10% {
+		 transform: rotate3d(1, 1, 0, 320deg);
+	}
+	 20% {
+		 transform: rotate3d(1, 0, 0, -90deg);
+	}
+	 30% {
+		 transform: rotate3d(1, 1, 0, 440deg);
+	}
+	 40% {
+		 transform: rotate3d(1, 0, 0, -180deg);
+	}
+	 50% {
+		 transform: rotate3d(1, 1, 0, 460deg);
+	}
+	 60% {
+		 transform: rotate3d(0, 1, 0, -195deg);
+	}
+	 70% {
+		 transform: rotate3d(1, 1, 0, 172deg);
+	}
+	 80% {
+		 transform: rotate3d(0, 1, 0, -360deg);
+	}
+	 90% {
+		 transform: rotate3d(1, 1, 0, 280deg);
+	}
+}
+ @keyframes rotateZed {
+	 20% {
+		 transform: translatez(100px);
+	}
+	 40% {
+		 transform: translatez(-100px);
+	}
+	 60% {
+		 transform: translatez(100px);
+	}
+	 80% {
+		 transform: translatez(-100px);
+	}
+}
+ 
