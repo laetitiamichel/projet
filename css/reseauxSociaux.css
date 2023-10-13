@@ -1,0 +1,13 @@
+/* CONFIGURATION ICONES RESEAUX SOCIAUX */
+
+.reseaux-sociaux {
+    list-style: none;
+    padding: 10rem;
+    display: flex;
+    justify-content: space-evenly; /* Alignement horizontal au centre */
+    align-items: end; /* Alignement vertical au centre */
+    
+  }
+  .reseaux-sociaux li {
+    margin: 0 10px; /* Marge horizontale entre les logos */
+  }

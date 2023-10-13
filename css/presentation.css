@@ -1,0 +1,46 @@
+/* H3 PRESENTATION */
+.presentation-primary{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 6rem;
+    background-color: var(--bgcolor-theme);
+    color: white;
+    text-align: center;
+    position: sticky;
+    scroll-behavior: smooth;
+  }
+
+  /* PAGE DE DROITE PRESENTATION = SCROLL */
+nav.droite-presentation{
+    width: 50%;
+    height: 50rem;
+    float: left;
+    scroll-behavior: smooth;
+  }
+  /* PAGE DE GAUCHE PRESENTATION */
+  div.gauche-presentation{
+    width: 50%;
+    height: 50rem;
+    overflow-y: auto; 
+    position:sticky; 
+    float: left;
+    background-color: var(--bgcolor);
+    text-align: center;
+    line-height: 4rem;
+  }
+  /* IMAGES-ICONES PRESENTATION PAGE DE GAUCHE */
+  .imageFond img{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  
+  p.texte-presentation img{
+    background-color: var(--bgcolor);
+    display: block;
+    width: 20%;
+   
+  }

@@ -1,0 +1,28 @@
+/* CONFIGURATION DARK MODE */
+/* curseur bouton dark mode */
+button, input{
+    padding: 0;
+    background-color: inherit;
+    color : var(--text-deux);
+    border: 0;
+    cursor: pointer;
+    
+  }
+  
+  .dark-mode{
+    background-color: var(--text-deux);
+    color: var(--bgcolor); /*Couleur du texte du titre en mode sombre*/
+  }
+  
+  .dark-mode section ul.list-logo li {
+    background-color: var(--bgcolor); /*Fond des logos en mode sombre*/
+  }
+  
+  .dark-mode section ul.list-logo li img {
+    filter: invert(1); /*Inverser la couleur des images en mode sombre*/
+  }
+  .dark-mode {
+  background-color: var(--text-deux); /* Couleur de fond sombre */
+  color: white; /*Couleur du texte en mode sombre */ 
+  filter:grayscale(100%); 
+  }

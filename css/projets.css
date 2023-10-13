@@ -1,0 +1,12 @@
+.projets-primary{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 6rem;
+    background-color: var(--bgcolor-theme);
+    color: white;
+    text-align: center;
+    position: sticky;
+    scroll-behavior: smooth;
+  }
