@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
-/*  body {
-	/*  background: black; 
-     background: url(../asset/cover.jpg) no-repeat fixed center center  / cover;
-	 overflow: hidden;
-} */
+
  .containCube {
 	 position: relative;
 	 z-index: 10;

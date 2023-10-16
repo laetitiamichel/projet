@@ -41,6 +41,7 @@ nav.droite-presentation{
   p.texte-presentation img{
     background-color: var(--bgcolor);
     display: block;
+    margin: auto;
     width: 20%;
    
   }
