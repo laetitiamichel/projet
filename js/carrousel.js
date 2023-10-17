@@ -79,8 +79,12 @@
     }
   
   
-  
-  
+    document.getElementById("projet_1").onclick = function() {
+        window.location.href = "https://hackmd.io/U4r4WrRlT56l6z4jBnwhBg?both";
+        };
+        document.getElementById("projet_2").onclick = function() {
+            window.location.href = "https://hackmd.io/U4r4WrRlT56l6z4jBnwhBg?both";
+            };   
     
     init();
     
