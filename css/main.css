@@ -82,9 +82,8 @@ nav.page_de_droite{
 /* FOOTER */
 footer{
     background-color: #BFB8B4;
-    float: right;       
-    width: 50%;         
-    box-sizing: border-box;
+    
+    /* box-sizing: border-box; */
 }
 
 
