@@ -8,9 +8,7 @@ Gloomaps ![structure](./asset/glooMaps.png)
 ## CHARTE GRAPHIQUE
 ![charteGraphique](/asset/chartreGraphique.png)
 ## CHARTE TYPO
-![charteTypo](/asset/chartre_typo.png)(https://fonts.google.com/specimen/Fredericka+the+Great?preview.text=1&preview.text_type=custom&stroke=Serif)
-insérer du code = ``` + langage code ```
-![typo](/asset/Yanone_kaffeesatz_typo.png)
+![charteTypo](/asset/typo_frederica.png)
 
 ### images SVG
 J'ai créé mes propres icones sur FAVICO.IO
