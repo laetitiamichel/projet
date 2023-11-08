@@ -1,4 +1,10 @@
 /*MENU BURGER*/
+:root{
+  --bgcolor-theme: #BFAE9F;
+  --bgcolor: #fff;
+  --text-color: #73655D;
+  --text-deux: #32261d;
+}
 .hamburger-menu{
     position:fixed;
     z-index: 10;
@@ -40,7 +46,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: var(--text-deux);
+    background-color: #32261d;
     transition-duration: .60s;
   }
   .menu__btn > span::before {
@@ -62,7 +68,7 @@
     padding: 80px 0;
     list-style: none;
     background-color: var(--text-color);
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    box-shadow: 2px 2px 6px #32261d;
     transition-duration: .6s;
   }
   .menu__item {
