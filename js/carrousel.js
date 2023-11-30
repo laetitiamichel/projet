@@ -90,19 +90,17 @@
         //PROJET 1:
         let projet_1 = document.getElementById("projet_1");
         projet_1.addEventListener("click",()=>{
-            window.open("https://hackmd.io/U4r4WrRlT56l6z4jBnwhBg?both","blank");
+            window.open("https://hackmd.io/7ktEoDKWRKe8sk--XblYnw","blank")});
         //PROJET 2:
         let projet_2 = document.getElementById("projet_2");
             projet_2.addEventListener("click",()=>{
-                window.open("https://hackmd.io/U4r4WrRlT56l6z4jBnwhBg?both","blank");
+                window.open("https://hackmd.io/f46MK54fTO2tO9Otf8E7QA","blank")});
+        //PROJET 3:
+        let projet_3 = document.getElementById("projet_3");
+        projet_3.addEventListener("click",()=>{
+            window.open("https://hackmd.io/xIcM9AVmSTeCpfc3CLBqew?view","blank")});
         })
-    })
-
-/* document.addEventListener("DOMContentLoaded", (event)=>{ */
     
-
-})
-   
    
     init();
 })();

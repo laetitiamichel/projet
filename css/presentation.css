@@ -15,7 +15,7 @@
   /* PAGE DE GAUCHE PRESENTATION = SCROLL */
  .gauche-presentation{
     width: 50%;
-    height: 100vh;
+    height: 20%;
     float: left;
     /* padding-top: 4rem; */
     
@@ -23,7 +23,7 @@
   /* PAGE DE DROITE PRESENTATION */
   div.droite-presentation{
     width: 50%;
-    height: 50rem;
+    height: 20%;
     overflow-y: auto; 
     position:sticky; 
     float: left;
