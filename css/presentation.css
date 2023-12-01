@@ -11,7 +11,11 @@
     position: sticky;
     scroll-behavior: smooth;
   }
+.mask_presentation{
+  width: 100%;
+  height: 100%;
 
+}
   /* PAGE DE GAUCHE PRESENTATION = SCROLL */
  .gauche-presentation{
     width: 50%;
@@ -23,9 +27,9 @@
   /* PAGE DE DROITE PRESENTATION */
   div.droite-presentation{
     width: 50%;
-    height: 20%;
+    height: 90%;
     overflow-y: auto; 
-    position:sticky; 
+   /*  position:sticky;  */
     float: left;
     background-color: var(--bgcolor);
     text-align: center;

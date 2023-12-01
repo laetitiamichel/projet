@@ -23,8 +23,7 @@ nav.gauche-presentation{
     float: left;
     position: static;
     background-color: var(--bgcolor);
-    border-right: ;
-    /* padding-top: 4rem; */
+
     
   } 
   /* PAGE DE DROITE PRESENTATION */
@@ -45,7 +44,7 @@ nav.gauche-presentation{
     height: 50%;
     float: left;
     margin: auto ;
-    padding: 4rem 3rem; 
+   /*  padding: 4rem 3rem; */ 
     
   }
   .imageFond img{
