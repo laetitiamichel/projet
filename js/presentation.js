@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     })
     // click = 2022 => image de gauche change pour l'image 2022
     logo2007.addEventListener("click", ()=>{
-        image2007.setAttribute("src","./asset/presentation/logo-chu-toulouse.png")
+        image2007.setAttribute("src","./asset/presentation/09002798_V1_0000.webp")
          console.log("OK")
     })
 })
