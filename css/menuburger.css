@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/jeany-gifary');
+@import url('https://fonts.cdnfonts.com/css/sphere-next');
+
 /*MENU BURGER*/
 :root{
   --bgcolor-theme: #BFAE9F;
@@ -75,9 +78,9 @@
     display: block;
     padding: 12px 24px;
     color: var(--bgcolor);
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-family: 'Jeany Gifary', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
     text-decoration: none;
     transition-duration: .60s;
   }

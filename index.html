@@ -34,6 +34,8 @@
     <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
     <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.9.0/css/all.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&amp;display=swap'>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/jeany-gifary" >
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sphere-next" >
 
     <link rel="stylesheet" href="./css/veilleTechno.css">
     <link rel="stylesheet" href="./css/entreprise.css">
@@ -44,6 +46,7 @@
     <link rel="stylesheet" href="./css/presentation.css">
     <link rel="stylesheet" href="./css/3d.css">
     <link rel="stylesheet" href="./css/carrousel.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
 
 
@@ -52,37 +55,41 @@
 
 <!-- THEME -->
 
-<body>
+<body itemscope itemtype="https://schema.org/WebSite"> <!-- pour augmenter la visibité et référencement web  -->
     <!-- PAGE ACCUEIL -->
     <div class="mask" role="region">
         <header class="page_de_gauche">
-            <h1>Laëtitia MICHEL
+            <h1 class="H1_home_page" itemprop="name">
+                Laëtitia MICHEL
+
                 <!-- bouton dark mode -->
-                <button aria-label="light mode" class="light-mode">
+            <!--     <button aria-label="light mode" class="light-mode">
                     <span class="material-symbols-outlined">
                         flare
                     </span>
-                </button>
+                </button> -->
             </h1>
-            <h2>Portfolio développeur</h2>
+
+            <h2 class="H2_home_page">
+                Portfolio developpeur</h2>
             <!-- bouton réseaux sociaux -->
             <ul class="reseaux-sociaux">
                 <!-- INSTAGRAM -->
                 <li>
                     <a href="https://www.instagram.com/ruegabrielle_/" target="blank">
-                        <img src="./asset/insta/instagram_black_logo_icon_147122.svg" alt="Instagram Logo">
+                        <img src="./asset/insta/instagram_black_logo_icon_147122.svg" alt="Instagram Logo lien vers le profil">
                     </a>
                 </li>
                 <!-- LINKEDIN -->
                 <li>
                     <a href="https://www.linkedin.com/in/laetitia-michel-/" target="blank">
-                        <img src="./asset/linkedin/linkedin_black_logo_icon_147114.svg" alt="Linkedin logo">
+                        <img src="./asset/linkedin/linkedin_black_logo_icon_147114.svg" alt="Linkedin logo lein vers la page">
                     </a>
                 </li>
                 <!-- EMAIL -->
                 <li>
                     <a href="mailto:laetitia26.michel@gmail.com" target="blank">
-                        <img src="./asset/mail/telegram_black_logo_icon_147073.svg" alt="mail logo">
+                        <img src="./asset/mail/telegram_black_logo_icon_147073.svg" alt="mail logo pour envoyer un email">
                     </a>
                 </li>
             </ul>
@@ -93,7 +100,7 @@
         <nav class="page_de_droite">
             <!-- image BG -->
             <div class="imageFondHome" role="region">
-                <img src="./asset/image_home_page.jpg" alt="imageFondDroite">
+                <img src="./asset/image_home_page.jpg" alt="image présenation portfolio MICHEL Laetitia" itemprop="image">
             </div>
             <!-- MENU BURGER -->
             <div class="hamburger-menu" role="group">
@@ -101,7 +108,7 @@
                 <label class="menu__btn" for="menu__toggle">
                     <span class="material-symbols-outlined"></span>
                 </label>
-                <ul class="menu__box">
+                <ul class="menu__box" itemprop="accessModeSufficient">
                     <li><a class="menu__item" href="#presentation-primary">Présentation</a></li>
                     <li><a class="menu__item" href="#projets-primary">Projets</a></li>
                     <li><a class="menu__item" href="#entreprise-primary">Entreprise</a></li>
@@ -274,7 +281,7 @@
 
     <!-- VEILLE TECHNOLOGIQUE -->
     <br>
-<div class="techno-primary" role="region">
+<div class="techno-primary" role="region"  itemscope itemtype="https://schema.org/WebSite">
         <h3 class="techno-primary-h3" id="techno-primary">Veille Technologique</h3>
     
         <div class="pdf">
@@ -299,7 +306,13 @@
 
 
 <!-- </main> -->
-<footer>
+<footer itemprop="copyrightYear">
+    <p>
+        &copy; Laetitia MICHEL<time
+                    datetime="2023-12-06">
+                2023
+                </time>
+    </p>
  <!--    <div class="containCube">
         <div class="cube" role="group">
             <div class="cubeGroup cube-front cube-1"><img src="./favicon/android-chrome-512x512.png"></div>
