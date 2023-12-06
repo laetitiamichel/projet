@@ -1,21 +1,24 @@
+@import url('https://fonts.cdnfonts.com/css/jeany-gifary');
+@import url('https://fonts.cdnfonts.com/css/sphere-next');
+
 /* H3 ENTREPRISE */
 
-/* .entreprise-primary{
-    width: 100%;
-    height: 100vh;
-} */
 .entreprise-primary-h3{
 
     top: 0;
     left: 0;
     width: 100%;
-    line-height: 6rem;
+    line-height: 8rem;
     background-color: var(--bgcolor-theme);
     color: white;
     text-align: center;
+    font-family: 'Jeany Gifary', sans-serif;
+    font-weight: 200;
+    font-size: 5rem;
     position: sticky;
     scroll-behavior: smooth;
   }
+
 /* PAGE DE GAUCHE PRESENTATION = SCROLL */
 nav.gauche-presentation{
     width: 50%;
