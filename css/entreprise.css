@@ -20,262 +20,43 @@
   }
 
 /* PAGE DE GAUCHE PRESENTATION = SCROLL */
-nav.gauche-presentation{
+.gauche-presentation-entreprise{
     width: 50%;
-    height: 50rem;
+    height: 100%;
     float: left;
     position: static;
-    background-color: var(--bgcolor);
+  }
 
-    
-  } 
-  /* PAGE DE DROITE PRESENTATION */
-  div.droite-presentation{
+/* PAGE DE DROITE PRESENTATION */
+  .droite-presentation-entreprise{
     width: 50%;
-    height: 50rem;
+    height: 100%;
     overflow-y: auto; 
     float: left;
     position: static; 
     background-color: var(--bgcolor);
-	  color:black;
+	color:black;
     text-align: center;
     line-height: 4rem;
   }
-  /* IMAGES-ICONES PRESENTATION PAGE DE GAUCHE */
-  .imageFond{
-    width: 100%;
-    height: 50%;
-    float: left;
-    margin: auto ;
-   /*  padding: 4rem 3rem; */ 
-    
+
+/* IMAGES-ICONES PRESENTATION PAGE DE GAUCHE */
+
+.imageFond-entreprise{
+   
+    justify-content: center; 
+    padding-top: 20rem;   
   }
-  .imageFond img{
-    width: 100%;
-    height: 100%;
-  }
-  .droite-presentation img{
-    height: 50rem;
-  }
-  
-  p.texte-presentation img{
+
+  p.texte-presentation{
     background-color: var(--bgcolor);
-    display: block;
     margin: auto;
     width: 20%;
     cursor: pointer;
    
   }
 
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
-
-:root {
-	--body-color: #2c2d2a;
-	--savanna-bg: #e9bf8b;
-	--beach-bg: #e7dfcf;
-	--glacier-bg: #b6d6c8;
-	--coral-bg: #e86357;
-	--arrow-fill: #333231;
-	--body-font: "Montserrat", sans-serif;
-	--italic-font: "EB Garamond", serif;
-}
-.left-side {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	max-width: 320px;
-	
-	@media screen and (max-width: 930px) {
-		text-align: center;
-		max-width: 450px;
-	}
-}
-
-.mySwiper {
-	display: flex;
-	flex-grow: 1;
-	position: relative;
-}
-.center {
-	display: flex;
-	margin-left: 120px;
-	position: relative;
-	flex-shrink: 0;
-
-	@media screen and (max-width: 930px) {
-		margin-left: 0;
-		margin-bottom: 56px;
-	}
-
-	.bottle-bg {
-		width: 320px;
-		height: 450px;
-		object-fit: cover;
-		border-radius: 160px;
-
-		@media screen and (max-width: 930px) {
-			width: 260px;
-			height: 390px;
-		}
-		@media screen and (max-width: 575px) {
-			width: 220px;
-			height: 340px;
-		}
-	}
-
-	.bottle-img {
-		position: absolute;
-		top: 25%;
-		left: 0;
-		transform: scale(1.6);
-	}
-}
-
-.swiper-pagination {
-	position: absolute;
-	right: 30px;
-	left: auto;
-	top: 100px;
-	width: auto;
-	bottom: auto;
-	z-index: 2;
-	font-size: 14px;
-	font-family: var(--body-font);
-	font-weight: 500;
-}
-
-.button-wrapper {
-	position: absolute;
-	right: 30px;
-	bottom: 20px;
-	z-index: 1;
-	display: flex;
-	align-items: center;
-
-	@media screen and (max-width: 930px) {
-		top: 0;
-		left: 0;
-		width: 100%;
-		justify-content: space-between;
-		padding: 0 60px;
-	}
-	
-	@media screen and (max-width: 575px) {
-		padding: 0 20px;
-	}
-
-	svg {
-		width: 28px;
-	}
-}
-.swiper-button {
-    border: 1px solid var(--body-color);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
+  .logo-entreprise{
     justify-content: center;
-    background: linear-gradient(to right, var(--body-color) 40%, transparent 0%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all 0.3s ease-out;
-    cursor: pointer;
-
-    & + .swiper-button {
-        margin-left: 16px;
-
-        @media screen and (max-width: 930px) {
-            margin-left: 0;
-        }
-    }
-
-    &:hover {
-        background-color: var(--body-color);
-        background-position: left bottom;
-        svg {
-            stroke: #fff;
-        }
-    }
-}
-
-.swiper-prev-button {
-    background: linear-gradient(to left, var(--body-color) 40%, transparent 0%);
-    background-size: 200% 100%;
-    background-position: left bottom;
-    transition: all 0.3s ease-out;
-    svg {
-        transform: rotate(-180deg);
-    }
-    &:hover {
-        background-position: right bottom;
-    }
-}
-
-
-.swiper-slide {
-opacity: 0 !important;
-transition: 0.4s;
-&-active {
-    opacity: 1 !important;
-}
-}
-
-.swiper-slide .main-wrapper > *,
-.swiper-slide .main-content > * {
-transform: translateY(-30px);
-opacity: 0;
-transition-duration: 0.8s;
-}
-
-.swiper-slide-active .main-wrapper > *,
-.swiper-slide-active .main-content > * {
-transform: none;
-opacity: 1;
-}
-
-.swiper-slide .bottle-bg {
-transition-duration: 0.6s;
-opacity: 0;
-object-position: 60%;
-}
-
-.swiper-slide-active .bottle-bg {
-opacity: 1;
-transform: none;
-object-position: 50%;
-}
-
-.swiper-slide .bottle-img {
-transition-duration: 0.8s;
-transform: scale(1.2);
-opacity: 0;
-}
-
-.swiper-slide-active .bottle-img {
-opacity: 1;
-transform: scale(1.6);
-}
-
-[data-sld="1"] {
-.container,
-.header {
-    background-color: var(--savanna-bg);
-}
-}
-
-[data-sld="2"] {
-.container,
-.header {
-    background-color: var(--glacier-bg);
-}
-}
-
-[data-sld="3"] {
-.container,
-.header {
-    background-color: var(--coral-bg);
-}
-}
- */
+    width: 80%;
+  }
