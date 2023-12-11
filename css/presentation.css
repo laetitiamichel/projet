@@ -38,8 +38,7 @@
    /*  position:sticky;  */
     float: left;
     background-color: var(--bgcolor);
-    text-align: center;
-    line-height: 4rem;
+  
   }
   /* IMAGES-ICONES PRESENTATION PAGE DE GAUCHE */
   .imageFond{
@@ -50,19 +49,26 @@
     padding: 4rem 3rem; 
     
   }
-  .imageFond img{
+ /*  .imageFond img{
     width: 100%;
     height: 100%;
   }
-  .droite-presentation img{
-    height: 100%;
-  }
+ */
   
-  p.texte-presentation img{
+  p.texte-presentation{
     background-color: var(--bgcolor);
     display: block;
-    margin: auto;
-    width: 20%;
+    border: 0;
+    width: 80%;
     cursor: pointer;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
    
+  }
+
+  .logo{
+    display: block;
+    margin: auto;
+    width: 30%;
   }
