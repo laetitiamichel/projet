@@ -1,28 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr" prefix="og: https://ogp.me/ns#">
+<html lang="fr" >
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="portfolio Laetitia MICHEL">
-
-    <!-- open GRAPH-->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="giusmili.github.io">
-    <meta property="twitter:url" content="https://laetitiamichel.github.io/projet/">
-    <meta name="twitter:title" content="Portfolio Laetitia MICHEL">
-    <meta name="twitter:description" content="Présentation, projets personnels et entreprise">
-    <meta name="twitter:image" content="https://laetitiamichel.github.io/projet/asset/image_home_page.jpg">
-
-    <!-- open GRAPH FACEBOOK-->
-    <meta property="og:title" content="portfolio">
-    <meta property="og:type" content="website">
-    <!-- <meta property="og:domain" content="giusmili.github.io"> -->
-    <meta property="og:url" content="https://laetitiamichel.github.io/projet/">
-    <meta property="og:description" content="Présentation, projets personnels et entreprise">
-    <meta property="og:image" content="https://laetitiamichel.github.io/projet/asset/image_home_page.jpg">
-
-
 
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/logo http/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/logo http/favicon-32x32.png">
@@ -38,77 +20,82 @@
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sphere-next">
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/fredericka-the-great">
 
-    <link rel="stylesheet" href="./css/veilleTechno.css">
-    <link rel="stylesheet" href="./css/entreprise.css">
+    <!-- 
+    
     <link rel="stylesheet" href="./css/menuburger.css">
     <link rel="stylesheet" href="./css/darkmode.css">
     <link rel="stylesheet" href="./css/reseauxSociaux.css">
     <link rel="stylesheet" href="./css/projets.css">
+    <link rel="stylesheet" href="./css/main.css"> -->
+    
+    <link rel="stylesheet" href="./css/body.css">
     <link rel="stylesheet" href="./css/presentation.css">
-    <link rel="stylesheet" href="./css/3d.css">
     <link rel="stylesheet" href="./css/carrousel.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/main.css">
-
+    <link rel="stylesheet" href="./css/entreprise.css">
+    <link rel="stylesheet" href="./css/veilleTechno.css">
+    <link rel="stylesheet" href="./css/3d.css">
 
     <title>Portfolio</title>
 </head>
 
 <!-- THEME -->
-
-<body itemscope itemtype="https://schema.org/WebSite"> <!-- pour augmenter la visibité et référencement web  -->
-    <!-- PAGE ACCUEIL -->
-    <div class="mask" role="region">
-        <header class="page_de_gauche">
-            <h1 class="H1_home_page" itemprop="name">
+<body>
+    <!-- PAGE ACCUEIL class="mask" -->
+<header>
+    <div class="container">
+        <div class="page_de_gauche">
+            <div class="container-h1-h2">
+            <h1 class="H1_home_page">
                 Laëtitia MICHEL
-
-                <!-- bouton dark mode -->
-            <!--     <button aria-label="light mode" class="light-mode">
-                    <span class="material-symbols-outlined">
-                        flare
-                    </span>
-                </button> -->
             </h1>
-
             <h2 class="H2_home_page">
-                Portfolio developpeur
+                    Portfolio developpeur
             </h2>
-            <!-- bouton réseaux sociaux -->
-            <ul class="reseaux-sociaux">
-                <!-- INSTAGRAM -->
-                <li>
-                    <a href="https://www.instagram.com/ruegabrielle_/" target="blank">
-                        <img src="./asset/insta/instagram_black_logo_icon_147122.svg" alt="Instagram Logo lien vers le profil">
-                    </a>
-                </li>
-                <!-- LINKEDIN -->
-                <li>
-                    <a href="https://www.linkedin.com/in/laetitia-michel-/" target="blank">
-                        <img src="./asset/linkedin/linkedin_black_logo_icon_147114.svg" alt="Linkedin logo lein vers la page">
-                    </a>
-                </li>
-                <!-- EMAIL -->
-                <li>
-                    <a href="mailto:laetitia26.michel@gmail.com" target="blank">
-                        <img src="./asset/mail/telegram_black_logo_icon_147073.svg" alt="mail logo pour envoyer un email">
-                    </a>
-                </li>
-            </ul>
-        </header>
-
-        <!-- PAGE ACCUEIL DE DROITE  -->
-        <nav class="page_de_droite">
-            <!-- image BG -->
-            <div class="imageFondHome" role="region">
-                <img src="./asset/image_home_page.jpg" alt="image présenation portfolio MICHEL Laetitia" itemprop="image">
             </div>
+            <!-- bouton réseaux sociaux -->
+            <div class="reseaux-sociaux">
+                <ul class="container-reseaux">
+                    <!-- INSTAGRAM -->
+                    <li>
+                        <a href="https://www.instagram.com/ruegabrielle_/" target="blank">
+                            <img src="./asset/insta/instagram_black_logo_icon_147122.svg" alt="Instagram Logo lien vers le profil">
+                        </a>
+                    </li>
+                    <!-- LINKEDIN -->
+                    <li>
+                        <a href="https://www.linkedin.com/in/laetitia-michel-/" target="blank">
+                            <img src="./asset/linkedin/linkedin_black_logo_icon_147114.svg" alt="Linkedin logo lein vers la page">
+                        </a>
+                    </li>
+                    <!-- EMAIL -->
+                    <li>
+                        <a href="mailto:laetitia26.michel@gmail.com" target="blank">
+                            <img src="./asset/mail/telegram_black_logo_icon_147073.svg" alt="mail logo pour envoyer un email">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+            <!-- fin page de gauche -->
+
+            <!-- PAGE ACCUEIL DE DROITE  -->
+            <div class="page_de_droite" >
+                <!-- image BG -->
+                <div class="imageFondHome">
+                    <img src="./asset/image_home_page.jpg" alt="image présenation portfolio MICHEL Laetitia"> 
+                </div>
+                <div class="bandeau-menu">
+
+                </div>
+            </div>
+    </div>
             <!-- MENU BURGER -->
             <div class="hamburger-menu" role="group">
                 <input id="menu__toggle" type="checkbox">
-                <label class="menu__btn" for="menu__toggle">
-                    <span class="material-symbols-outlined"></span>
-                </label>
+                    <label class="menu__btn" for="menu__toggle">
+                        <span class="material-symbols-outlined"></span>
+                    </label>
                 <ul class="menu__box" itemprop="accessModeSufficient">
                     <li><a class="menu__item" href="#presentation-primary">Présentation</a></li>
                     <li><a class="menu__item" href="#projets-primary">Projets</a></li>
@@ -116,66 +103,84 @@
                     <li><a class="menu__item" href="#techno-primary">Veille Technologique</a></li>
                 </ul>
             </div>
-        </nav>
-    </div>
-    <!-- end module one -->
+        
+        <!-- end module one -->
+</header>
 
+<main>
+ <!-- PRESENTATION -->
+    
+        <div>
+            <h3 class="bandeau_h3" id="presentation-primary">Présentation</h3>
+        </div>
 
-    <!-- PRESENTATION -->
-    <!-- PAGE DE GAUCHE PRESENTATION -->
-    <div class="mask_presentation" role="region">
-        <h3 class="presentation-primary" id="presentation-primary">Présentation</h3>
-       <nav class="gauche-presentation">
+    <!-- PAGE DE GAUCHE PRESENTATION -->   
+    <div class="container">
+        
+        <div class="page_de_gauche">
             <div class="imageFond">
                 <img id="image-2007" src="./asset/presentation/09002798_V1_0000.webp" alt="logo-chu-toulouse">
             </div>
-       </nav>
+        </div>
 
-        <!-- PAGE DE DROITE PRESENTATION  -->
-
-        <div class="droite-presentation">
-            <p class="texte-presentation">
-                <img class="logo" id="logo-2007" src="./asset/presentation/2007.svg" alt="logo-2007">
-
-                <br><br>Diplôme Universitaire de Podologie <br><br>
-                Institut des Hôpitaux de Toulouse Purpan<br><br><br><br><br>
-
-                <img class="logo" id="logo-2011" src="./asset/presentation/2011.svg" alt="logo-2011">
-
-                <br><br>Visuel merchandiser<br><br>
-                Kookaï<br><br><br><br>
-
-                <img class="logo" id="logo-2016" src="./asset/presentation/2016.svg" alt="logo-2016">
-
-                <br><br>Ouverture concept store paris 11e <br><br>
-                Création site internet (eshop)<br><br>
-                Gestion d'employés et de stagiaires<br><br><br><br>
-
-
-                <img class="logo" id="logo-2017" src="./asset/presentation/2017.svg" alt="logo-2017">
-
-                <br><br>Création de marque Rue Gabrielle<br>
-                Conception de bijoux en laiton plaqué Or<br>
-                Veille concurencielle<br>
-                Prospection Nationale<br>
-                Gestion des réseaux sociaux<br><br><br><br>
-
-                <img class="logo" id="logo-2022" src="./asset/presentation/2022.svg" alt="logo-2022">
-
-                <br><br>Consultante technique Service Now<br><br>
-                Devoteam<br><br>
-                Implémentation de solutions digitales<br><br>
-                EDF, QUALICONSULT<br><br><br><br>
-            </p>
+        <div class="page_de_droite">
+            <div class="container-presentation">
+                
+                <div class="container-logo">
+                    <img  class="logo" id="logo-2007" src="./asset/presentation/2007.svg" alt="logo-2007">
+                    <ul class="texte-presentation">
+                        <li>Diplôme Universitaire de Podologie</li>
+                        <li>Institut des Hôpitaux de Toulouse Purpan</li>
+                    </ul>
+                </div>
+                    
+               <div class="container-logo">
+                    <img class="logo" id="logo-2011" src="./asset/presentation/2011.svg" alt="logo-2011">
+                    <ul class="texte-presentation">
+                        <li>Visuel merchandiser</li>
+                        <li>Kookaï</li>
+                    </ul>
+                </div>
+                    
+                <div class="container-logo">
+                    <img class="logo" id="logo-2016" src="./asset/presentation/2016.svg" alt="logo-2016">
+                    <ul class="texte-presentation">
+                        <li>Ouverture concept store paris 11e</li>
+                        <li>Création site internet (eshop)</li>
+                        <li>Gestion d'employés et de stagiaires</li>
+                    </ul>
+                </div>
+                    
+                <div class="container-logo">
+                    <img class="logo" id="logo-2017" src="./asset/presentation/2017.svg" alt="logo-2017">
+                    <ul class="texte-presentation">
+                        <li>Création de marque Rue Gabrielle</li>
+                        <li>Conception de bijoux en laiton plaqué Or</li>
+                        <li>Veille concurencielle</li>
+                        <li>Prospection Nationale</li>
+                        <li>Gestion des réseaux sociaux</li>
+                    </ul>
+                </div>
+                    
+                <div class="container-logo">
+                    <img class="logo" id="logo-2022" src="./asset/presentation/2022.svg" alt="logo-2022">
+                    <ul class="texte-presentation">
+                        <li>Consultante Technique Service Now</li>
+                        <li>Devoteam</li>
+                        <li>Implémentation de solutions digitales</li>
+                        <li>EDF, QUALICONSULT</li>
+                    </ul>
+                </div>
+                    
+            </div>
         </div>
     </div>
-    
-    <!-- FIN PAGE PRESENTATION  -->
 
     <!-- PROJETS -->
-    <div class="projet-primary" role="region">
-        <h3 class="projets-primary" id="projets-primary">Projets</h3>
-
+    <div>
+        <h3 class="bandeau_h3" id="projets-primary">Projets</h3>
+    </div> 
+    <div class="container">
         <div class="carousel">
             <div class="carousel__body">
                 <div class="carousel__slider">
@@ -231,68 +236,71 @@
             </div>
         </div>
     </div>
-    <br>
+    <div>
+        <h3 class="bandeau_h3" id="entreprise-primary">Entreprise</h3>
+    </div>
+<!-- ENTREPRISE -->
+<div class="container">
+    <!-- PAGE DE GAUCHE ENTREPRISE  -->
+    <div class="page_de_gauche">
+        <div class="imageFond-entreprise">
+            <img id="logo-devoteam" src="./asset/entreprise/Dev_logo_rgb.png" alt="logo-devoteam">
+        </div>
+    </div>
 
-    <!-- ENTREPRISE -->
-    <div class="entreprise-primary" role="region">
-        <h3 class="entreprise-primary-h3" id="entreprise-primary">ENTREPRISE</h3>
- 
-        <!-- PAGE DE GAUCHE PRESENTATION  -->
-        <div class="gauche-presentation-entreprise">
-            <div class="imageFond-entreprise">
-                <img id="logo-devoteam" src="./asset/entreprise/Dev_logo_rgb.png" alt="logo-devoteam">
+    <!-- PAGE DE DROITE PRESENTATION  -->
+    <div class="page_de_droite">
+        <div class="container-presentation">
+            <div class="container-logo">
+                    <img class="logo-entreprise" src="./asset/entreprise/logo_GroupeQualiconsult_horizontal_pantones-2-1.png" alt="logo-qualiconsult">
+                    <ul class="texte-presentation">
+                        <li>Mission QUALICONSULT</li>
+                        <li>Service catalogue</li>
+                        <li>Mise en place de formulaire sur le portail Utilisateur</li>
+                        <li>Création de workflow</li>
+                        <li>Scripting pour business Rules et UI policies pour les champs</li>
+                    </ul>
+            </div>
+            <div class="container-logo">
+                    <div class="cube">
+                    <a class="side top" href="./pdf/veilleConcurentielle.pdf" target="_blank">Cliquer</a>
+                    <a class="side front">Ici</a>
+                    </div>
+                <img class="logo-entreprise" src="./asset/entreprise/edf-logo.png" alt="logo-edf">
+                <ul class="texte-presentation">
+                    <li>Mission EDF</li>
+                    <li>Sur le portail WIZMI employés</li>
+                    <li>Mise en place de widget</li>
+                </ul>
             </div>
         </div>
-
-        <!-- PAGE DE DROITE PRESENTATION  -->
-        <div class="droite-presentation-entreprise">
-            <p class="texte-presentation-entreprise">
-                <img class="logo-entreprise" src="./asset/entreprise/logo_GroupeQualiconsult_horizontal_pantones-2-1.png" alt="logo-qualiconsult">
-
-                <br><br>Mission QUALICONSULT <br><br>
-                Service catalogue<br>
-                Mise en place de formulaire sur le portail Utilisateur<br>
-                Création de workflow<br>
-                Scripting pour business Rules et UI policies pour les champs<br><br>
-                <div class="scene">
-                    <div class="cube">
-                      <a class="side top" href="./pdf/veilleConcurentielle.pdf" target="_blank">Cliquer</a>
-                      <a class="side front">Ici</a>
-                    </div>
-                </div>
-
-                <img class="logo-entreprise" src="./asset/entreprise/edf-logo.png" alt="logo-edf">
-
-                <br><br>Mission EDF<br><br>
-                Sur le portail WIZMI employés<br>
-                Mise en place de widget<br><br><br>
-            </p>
-        </div>
-    </div>
-
-
- <!-- VEILLE TECHNOLOGIQUE -->
-<div class="techno-primary" role="region" itemscope itemtype="https://schema.org/WebSite" id="techno-primary">
-    <h3 class="techno-primary-h3">
-        Veille Technologique
-    </h3>
-
-    <div class="pdf">
-        <a class="button-etude" href="./pdf/veilleConcurentielle.pdf" target="_blank">DECOUVRIR <br>l'étude</a>
-    </div>
-    <div class="telecharge">
-        <a class="button-telecharger" href="./pdf/etude de marché_version écrite.pdf" target="_blank">TELECHARGER</a>
     </div>
 </div>
 
-    <!-- </main> -->
-    <footer itemprop="copyrightYear">
-        <p>
-            &copy; Laetitia MICHEL<time
-                        datetime="2023-12-06">
-                    2023
-                    </time>
-        </p>
+ <!-- VEILLE TECHNOLOGIQUE -->
+
+<!-- <div class="container"> -->
+    <div class="container-techno" id="techno-primary">
+        <div>
+            <h3 class="bandeau_h3" id="veille-primary">Veille Technologique</h3>
+        </div>
+        <div class="pdf">
+            <a class="button-etude" href="./pdf/veilleConcurentielle.pdf" target="_blank">DECOUVRIR <br>l'étude</a>
+        </div>
+        <div class="telecharge">
+            <a class="button-telecharger" href="./pdf/etude de marché_version écrite.pdf" target="_blank">TELECHARGER</a>
+        </div>
+    </div>
+<!-- </div> -->
+</main>
+<footer>
+
+    <p>
+        &copy; Laetitia MICHEL<time
+                    datetime="2023-12-06">
+                2023
+                </time>
+    </p>
     <div class="containCube">
             <div class="cube" role="group">
                 <div class="cubeGroup cube-front cube-1"><img src="./favicon/android-chrome-512x512.png"></div>
@@ -302,13 +310,12 @@
                 <div class="cubeGroup cube-rear cube-5"><img src="./asset/presentation/ServiceNow_newlogo_200x200.svg"></div>
                 <div class="cubeGroup cube-bottom cube-6"><img src="./asset/presentation/htmlIcone.svg"></div>
             </div>
-        </div>
-    </footer>
+    </div>
 
-    <script src="./js/presentation.js"></script>
-    <script src="./js/carrousel.js"></script>
-    <script src="./js/app.js"></script>
 
+</footer>
+<script src="./js/presentation.js"></script>
+<script src="./js/carrousel.js"></script>
+<script src="./js/app.js"></script>
 </body>
-
 </html>

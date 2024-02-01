@@ -1,0 +1,213 @@
+@import url('https://fonts.cdnfonts.com/css/jeany-gifary');
+@import url('https://fonts.cdnfonts.com/css/sphere-next');
+@import url('https://fonts.cdnfonts.com/css/fredericka-the-great');
+@import url('https://fonts.cdnfonts.com/css/bethalora');
+@import url('https://fonts.cdnfonts.com/css/avocade');
+@import url('https://fonts.cdnfonts.com/css/hello-good-old-outline');
+
+/* RESET */
+
+html{ /* sélecteur propriété valeur */
+  font-size: 62.5%;  /* 1.000rem root em 10px */
+  scroll-behavior: smooth;
+}
+body{
+  font: 1.6rem sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+h1,h2,h3,img,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header,figure,nav,main,ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
+:root{
+  --bgcolor-theme: #BFAE9F;
+  --bgcolor: #fff;
+  --text-color: #73655D;
+  --text-deux: #0d0a08;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* HEADER*/
+
+.container{
+  display: flex;
+
+}
+
+.page_de_gauche{
+  width: 50%;        
+  height: 100vh; 
+  color: var(--text-color);   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-h1-h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+.H1_home_page{
+  font-family: 'Jeany Gifary', sans-serif;
+  font-weight: 400;
+  font-size: 8rem;
+  line-height: 1.5;
+}
+
+.H2_home_page{
+  margin-top: 5rem;
+  font-family: 'Sphere Next', sans-serif;
+  font-size: 2rem;    
+}
+
+.container-reseaux{
+  display: flex;
+  justify-content: center;
+
+  gap: 3rem;
+  
+}
+.reseaux-sociaux{
+  text-align: center;
+  padding-top: 5rem;
+}
+
+/* MISE EN PAGE PAGE DE DROITE */
+.page_de_droite{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+ /*  flex-direction: column;
+  justify-content: center; */
+
+}
+
+.imageFondHome{
+  display: flex;
+  width: 100%;
+
+}
+
+
+/* MENU MURGER */
+.hamburger-menu{
+  position:fixed;
+  z-index: 10;
+  display:block;
+  width:60%;
+  margin:auto;
+}
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+
+.menu__btn {
+  position: fixed;
+  margin-top: 2rem;
+  top: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 4rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: .2rem;
+  background-color: #32261d;
+  transition-duration: .60s;
+  cursor: pointer;
+  
+}
+.menu__btn > span::before {
+  content: '';
+  top: -1rem;
+  
+}
+.menu__btn > span::after {
+  content: '';
+  top: 1rem;
+  
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: var(--text-color);
+  box-shadow: 2px 2px 6px #32261d;
+  transition-duration: .6s;
+}
+.menu__item {
+  display: block;
+  padding: 3rem 4rem;
+  color: var(--bgcolor);
+  font-family: 'Jeany Gifary', sans-serif;
+  font-size: 7rem;
+  font-weight: 400;
+  letter-spacing: .7rem;
+  text-decoration: none;
+  transition-duration: .60s;
+}
+.menu__item:hover {
+  
+  background-color: var(--bgcolor-theme);
+}
+
+
+/* overflow-y: auto; */
+
+.bandeau_h3{
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  justify-content: center;
+  scroll-behavior: smooth;
+  width: 100%;
+  line-height: 10rem;
+  background-color: var(--bgcolor-theme);
+  color: white;
+  font-family: 'Jeany Gifary', sans-serif;
+  font-weight: 200;
+  font-size: 7rem;
+}

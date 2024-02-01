@@ -1,60 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/jeany-gifary');
-@import url('https://fonts.cdnfonts.com/css/sphere-next');
-
-/* H3 ENTREPRISE */
-
-.entreprise-primary-h3{
-
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 8rem;
-    background-color: var(--bgcolor-theme);
-    color: white;
-    text-align: center;
-    font-family: 'Jeany Gifary', sans-serif;
-    font-weight: 200;
-    font-size: 5rem;
-    position: sticky;
-    scroll-behavior: smooth;
-  }
-
-/* PAGE DE GAUCHE PRESENTATION = SCROLL */
-.gauche-presentation-entreprise{
-    width: 50%;
-    height: 100%;
-    float: left;
-    position: static;
-  }
-
-/* PAGE DE DROITE PRESENTATION */
-  .droite-presentation-entreprise{
-    width: 50%;
-    height: 100%;
-    overflow-y: auto; 
-    float: left;
-    position: static; 
-    background-color: var(--bgcolor);
-	color:black;
-    text-align: center;
-    line-height: 4rem;
-  }
-
-/* IMAGES-ICONES PRESENTATION PAGE DE GAUCHE */
-
-.imageFond-entreprise{
-   
-    justify-content: center; 
-    padding-top: 20rem;   
-  }
-
-  p.texte-presentation{
+/*  p.texte-presentation{
     background-color: var(--bgcolor);
     margin: auto;
     width: 20%;
     cursor: pointer;
    
-  }
+  } */
 
   .logo-entreprise{
     justify-content: center;
@@ -63,15 +13,13 @@
   }
 
   /* bouton */
-
+ 
   .scene {
-    width: 10em;
-    
+    width: 15em;
    }
    
    .cube {
-    position: relative;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: #ccc;
@@ -80,7 +28,7 @@
     transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
     transform-style: preserve-3d;
     transform-origin: 100% 50%;
-    width: 10em;
+    width: 15em;
     height: 4em;
    }
    
@@ -90,8 +38,6 @@
    
    .side {
     box-sizing: border-box;
-    position: absolute;
-    display: inline-block;
     height: 4em;
     width: 10em;
     text-align: center;
