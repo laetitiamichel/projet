@@ -25,7 +25,7 @@ h1,h2,h3,img,li{
   text-decoration: none;
 }
 
-header,figure,nav,main,ul{
+header,figure,nav,main,ul,p{
     margin: 0;
     padding: 0;
     overflow: hidden;    
@@ -44,7 +44,6 @@ header,figure,nav,main,ul{
 
 .container{
   display: flex;
-
 }
 
 .page_de_gauche{
@@ -79,9 +78,7 @@ header,figure,nav,main,ul{
 .container-reseaux{
   display: flex;
   justify-content: center;
-
   gap: 3rem;
-  
 }
 .reseaux-sociaux{
   text-align: center;
