@@ -22,17 +22,18 @@
   }
   .slider {
     width: 100%;
-    min-height: 385px;
+    min-height: 100vh/* 385px */;
   }
   .slider input {
     display: none;
   }
+
   .mycard {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     /* max-width: 24rem; */
   }
   .cardtitle {
@@ -55,6 +56,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 2rem;
     
     /* margin-top: 2.75rem; */
     
@@ -63,9 +65,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    --tw-text-opacity: 1;
-    color: rgba(107, 114, 128, var(--tw-text-opacity));
+    color: var(--text-color);
     text-align: center;
+    font-family: 'Jeany Gifary', sans-serif;
+    font-size: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   
   .testimonials {
@@ -73,42 +78,38 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    min-height: 375px;
-    max-height: 100vh;
-    perspective: 500px;
-    margin-top: 5rem;
+    width: 100%;
+    height: 60%;
+    perspective: 50rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
     overflow: hidden;
   }
   .testimonials .item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 20rem;
+    width: 40%;
+    height: 90%; 
     border-radius: 1.5rem;
-    border-width: 2px;
+    border-width: 0.2rem;
     --tw-border-opacity: 1;
-    border-color: rgba(30, 58, 138, var(--tw-border-opacity));
-    top: 0;
+   /*  border-color: rgba(30, 58, 138, var(--tw-border-opacity)); */
+    /* top: 1rem; */
     position: absolute;
     box-sizing: border-box;
     background-color: #fff;
     padding: 1rem;
-    width: 40%;
-    height: 80%; 
     text-align: center;
     transition: transform 0.4s;
     -webkit-transform-style: preserve-3d;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow:  0 0 1rem var(--bgcolor-theme) ;
     user-select: none;
     cursor: pointer;
   }
 .testimonials .item img {
-    
-    width: 20rem;
-    height: 20rem;
-    /* margin: 1rem; */
-    /* border-radius: 50%; */
-   /*  border: 13px solid #3b344d;*/
+    width: 40rem;
+    height: 27rem;
   }
 
   .dots {
@@ -120,20 +121,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* display: block; */
-    height: 5px;
-    width: 5px;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
     cursor: pointer;
-    background-color: #413b52;
-    margin: 7px;
+    background-color: var(--bgcolor-theme);
+    margin: 1rem;
     transition: transform 0.2s, color 0.2s;
   }
   
   /* First */
   #t-1:checked ~ .dots label[for="t-1"] {
     transform: scale(2);
-    background-color: #fff;
+
   }
   #t-1:checked ~ .dots label[for="t-2"] {
     transform: scale(1.5);
@@ -164,7 +164,7 @@
   }
   #t-2:checked ~ .dots label[for="t-2"] {
     transform: scale(2);
-    background-color: #fff;
+
   }
   #t-2:checked ~ .dots label[for="t-3"] {
     transform: scale(1.5);
@@ -193,7 +193,7 @@
   }
   #t-3:checked ~ .dots label[for="t-3"] {
     transform: scale(2);
-    background-color: #fff;
+
   }
   #t-3:checked ~ .dots label[for="t-4"] {
     transform: scale(1.5);
@@ -221,7 +221,7 @@
   }
   #t-4:checked ~ .dots label[for="t-4"] {
     transform: scale(2);
-    background-color: #fff;
+
   }
   #t-4:checked ~ .dots label[for="t-5"] {
     transform: scale(1.5);
@@ -249,7 +249,10 @@
   }
   #t-5:checked ~ .dots label[for="t-5"] {
     transform: scale(2);
-    background-color: #fff;
+
+  }
+  #t-5:checked ~ .dots label[for="t-6"] {
+    transform: scale(1.5);
   }
   #t-5:checked ~ .testimonials label[for="t-1"] {
     transform: translateX(-1200px) translateZ(-360px) translateY(-60px);
@@ -270,3 +273,4 @@
     z-index: 4;
   }
   
+ 
