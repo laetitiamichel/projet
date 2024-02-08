@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (e)=>{
         //PROJET 4:
         let projet_4 = document.getElementById("projet_4");
         projet_4.addEventListener("click",()=>{
-        window.open("https://hackmd.io/kW0dlpXmR9ucY7u-Tq1KKQ?view","blank")});
+        window.open("https://hackmd.io/6RMAYuz0RRuOdeI2_iw8mQ?view","blank")});
 
         //PROJET 5:
         let projet_5 = document.getElementById("projet_5");
