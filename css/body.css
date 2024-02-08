@@ -48,7 +48,7 @@ header,figure,nav,main,ul,p{
 
 .page_de_gauche{
   width: 50%;        
-  height: 100vh; 
+  height: 95vh; 
   color: var(--text-color);   
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@ header,figure,nav,main,ul,p{
 /* MISE EN PAGE PAGE DE DROITE */
 .page_de_droite{
   width: 50%;
-  height: 100vh;
+  height: 95vh;
   display: flex;
  /*  flex-direction: column;
   justify-content: center; */
@@ -98,9 +98,7 @@ header,figure,nav,main,ul,p{
 .imageFondHome{
   display: flex;
   width: 100%;
-
 }
-
 
 /* MENU MURGER */
 .hamburger-menu{
@@ -142,10 +140,9 @@ header,figure,nav,main,ul,p{
 .menu__btn > span::before,
 .menu__btn > span::after {
   display: block;
-  position: absolute;
-  
+  position: absolute;  
   width: 100%;
-  height: 0.5rem;
+  height: 0.3rem;
   background-color: #32261d;
   transition-duration: .60s;
   cursor: pointer;
@@ -153,13 +150,11 @@ header,figure,nav,main,ul,p{
 }
 .menu__btn > span::before {
   content: '';
-  top: -1rem;
-  
+  top: -1rem;  
 }
 .menu__btn > span::after {
   content: '';
-  top: 1rem;
-  
+  top: 1rem; 
 }
 .menu__box {
   display: block;
@@ -168,8 +163,7 @@ header,figure,nav,main,ul,p{
   right: -100%;
   width: 50%;
   height: 100%;
-  margin: 0;
-  padding: 80px 0;
+  padding: 1rem 0;
   list-style: none;
   background-color: var(--text-color);
   box-shadow: 2px 2px 6px #32261d;
@@ -187,7 +181,6 @@ header,figure,nav,main,ul,p{
   transition-duration: .60s;
 }
 .menu__item:hover {
-  
   background-color: var(--bgcolor-theme);
 }
 
