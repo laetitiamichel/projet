@@ -53,16 +53,16 @@
    }
    
    .top {
-    background: #73655D;
-    color:  #fff;
+    background: #fff ;
+    color: #73655D;
     transform: rotateX(90deg) translate3d(0, 0, 2em);
     box-shadow: inset 0 0 0 5px var(--bgcolor-theme);
    }
    
    
    .front {
-    background: #73655D;
-    color: #fff;
+    background: #fff ;
+    color: #73655D;
     box-shadow: inset 0 0 0 5px var(--bgcolor-theme);
     transform: translate3d(0, 0, 2em);
    }

@@ -15,13 +15,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 
 } 
 .texte-presentation{
+    font-family: 'Josefin Slab', serif;
     text-align: center;
-    line-height: 4rem;
+    line-height: 3rem;
     font-size: 2rem;
     padding: 2rem;
+    color: black;
+    font-weight: bolder ;  
+  }
+  .texte-presentation li{
+    padding: 1rem;
   }
 .logo{
     width: 30%;
