@@ -5,6 +5,7 @@
 
 .container-presentation{
     overflow: scroll;
+    overflow-x: hidden;
     padding-top: 5rem;
     width: 100%;
 } 
@@ -33,7 +34,7 @@
 .logo{
     width: 30%;
     justify-content: center;
-    cursor: url("/asset/presentation/clic_curseur.png"), pointer;
+    cursor: url("../asset/presentation/clic_curseur.png"), pointer;
   }  
 
   /* PAGE DE GAUCHE */
