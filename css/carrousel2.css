@@ -115,7 +115,7 @@
   .dots {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
   }
   .dots label {
     display: flex;
@@ -124,7 +124,7 @@
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: url("/asset/presentation/clic_curseur.png"), pointer;
     background-color: var(--bgcolor-theme);
     margin: 1rem;
     transition: transform 0.2s, color 0.2s;

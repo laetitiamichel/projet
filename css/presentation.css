@@ -33,6 +33,7 @@
 .logo{
     width: 30%;
     justify-content: center;
+    cursor: url("/asset/presentation/clic_curseur.png"), pointer;
   }  
 
   /* PAGE DE GAUCHE */
