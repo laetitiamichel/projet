@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio Laetitia MICHEL">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/logo http/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/logo http/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/logo http/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/logo http/site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.9.0/css/all.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&amp ;display=swap'>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/jeany-gifary">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sphere-next">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/fredericka-the-great">
+  
+    
+    <link rel="stylesheet" href="./css/carrousel2.css">
+    <link rel="stylesheet" href="./css/main_ligues.css">
+
+    <title>Page LIGUES</title>
+</head>
+
+<!-- THEME -->
+<body>
+    <!-- PAGE ACCUEIL  -->
+<header >
+    <div>
+        <h3 class="bandeau_h3" >Projet LIGUES</h3>
+    </div>
+    
+    <!-- MENU BURGER -->
+    <div class="hamburger-menu" role="group">
+        <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
+                <span class="material-symbols-outlined"></span>
+            </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#presentation_ligues">Présentation</a></li>
+            <li><a class="menu__item" href="#arbre_ligues">Arbre</a></li>
+            <li><a class="menu__item" href="#mcd_ligues">MCD</a></li>
+            <li><a class="menu__item" href="#bdd_ligues">Base de Données</a></li>
+        </ul>
+    </div>
+
+<!-- end module one -->
+</header>
+<main>
+
+    <h2 class="h2_ligues" id="presentation_ligues">
+        Présentation du projet
+    </h2>
+    <div class="container">
+        <p class="p_ligues">
+            Un des responsables de la M2L, utilise une application pour gérer les employés des ligues.</br>
+
+            Cette application, très simple, n’existe qu’en ligne de commande et est mono-utilisateur.</br>
+
+            L'application est conçue selon une architecture 3-tiers et vous devez conserver son architecture applicative.</br>
+
+            Les niveaux d’habilitation des utilisateurs sont les suivants :
+        </p>
+        <div class="u_presentation">
+            <ul class="u_ligues">
+                <li class="li_presentation">
+                    Un simple employé de ligue peut ouvrir l’application et s’en servir comme un annuaire, mais il ne dispose d’aucun droit d’écriture.
+                </li>
+                <li class="li_presentation">
+                    Un employé par ligue est admininstrateur et dispose de droits d’écriture peut gérer la liste des emloyés de sa propre ligue avec une application bureau.
+                </li>
+                <li class="li_presentation">
+                    Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande.
+                    L’application doit être rendue multi-utilisateurs grace à l’utilisation d’une base de données.
+                </li>
+            </ul>
+        </div>
+        <p class="p_ligues">
+            Les trois niveaux d’habilitation ci-dessus doivent être mis en place.
+        </p>
+        <div class="img_appli">
+            <img src="./asset/projets/ligues/appli_3_tiers.png">
+        </div>
+    </div>
+    <!-- ARBRE -->
+    <h2 class="h2_ligues" id="arbre_ligues">
+        Arbre Euristique
+    </h2>
+    <div class="container">
+        <p class="p_ligues">
+            L'objectif de cet arbre est de représenter chaque menu et chaque option par un noeud.
+            </br>Cet arbre a été réalisé sur le site FIGMA:
+        </p>
+        <div class="img_appli">
+            <img src="./asset/projets/ligues/Arbre Heuristique (1) (1).png">
+        </div>
+    </div>
+    <!-- MCD -->
+    <h2 class="h2_ligues" id="mcd_ligues">
+        MCD
+    </h2>
+    <p class="p_ligues">
+        En utilisant les données s'affichant en ligne de commande ainsi que le code de la couche métier de l'application, 
+        proposer un MCD permettant de représenter les données de l'application avec une base de données relationnelles.
+    </br>Ici le MCD a été réalisé sur le logiciel MOCODO:
+    </p>
+    <div class="container-2">
+        <div class="page_de_gauche"> 
+            <div class="img_mcd">
+                <img src="./asset/projets/ligues/MCD.PNG">
+            </div>  
+        </div>
+        <div class="page_de_droite">
+            <ul class="code_ligues">
+                <li class="li_code">COMPOSER, 0N LIGUE, 01 EMPLOYE</li>
+                <li class="li_code">LIGUE: id_ligue, nomLigue </li>
+                <li class="li_code">EMPLOYE: id_employe, nom, prenom, mail, password, dateArrivee,dateDepart, statut</li>  
+            </ul>
+            <ul class="code_ligues">
+                <li class="li_code"><b>Shéma relationnel:</b></li>
+                <li class="li_code">EMPLOYE(~~id_employe~~, nom, prenom, mail, password, dateArrivee, dateDepart, statut, #id_ligue)</li>
+                <li class="li_code">LIGUE(~~id_ligue~~, nomLigue)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- BDD -->
+    <h2 class="h2_ligues" id="bdd_ligues">
+        Base de Données
+    </h2>
+    <div class="container">
+        <img src="./asset/projets/ligues/sql_bdd.png" class="img_bdd">
+        <img src="./asset/projets/ligues/sql_tables.png" class="img_bdd">
+        <img src="./asset/projets/ligues/table_employe_foreignKey.png" class="img_bdd">
+    </div>
+</main>
+</body>
+</html>
