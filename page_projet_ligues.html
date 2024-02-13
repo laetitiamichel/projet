@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sphere-next">
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/fredericka-the-great">
   
-    
+    <link rel="stylesheet" href="./css/pop_up_arbre_ligues.css">
     <link rel="stylesheet" href="./css/carrousel_page_ligues.css">
     <link rel="stylesheet" href="./css/main_ligues.css">
 
@@ -92,15 +92,33 @@
     <h2 class="h2_ligues" id="arbre_ligues">
         Arbre Euristique
     </h2>
-    <div class="container">
-        <p class="p_ligues">
-            L'objectif de cet arbre est de représenter chaque menu et chaque option par un noeud.
-            </br>Cet arbre a été réalisé sur le 
-            <a href="https://www.figma.com/file/nKBFi9b7gsDLVyzOhAWF3z/Arbre-Heuristique?type=whiteboard&node-id=0-1&t=q7OVmbPWc5gU94zu-0">site FIGMA:</a> 
-        </p>
-        <div class="img_appli">
-            <img src="./asset/projets/ligues/Arbre Heuristique (1) (1).png">
+    <p class="p_ligues">
+        L'objectif de cet arbre est de représenter chaque menu et chaque option par un noeud.
+        </br>Cet arbre a été réalisé sur le 
+        <a href="https://www.figma.com/file/nKBFi9b7gsDLVyzOhAWF3z/Arbre-Heuristique?type=whiteboard&node-id=0-1&t=q7OVmbPWc5gU94zu-0">site FIGMA:</a> 
+    </p>
+        <div class="container_arbre">
+            <div class="img_arbre">
+                <!-- Trigger the Modal -->
+                <img id="myImg" src="./asset/projets/ligues/Arbre Heuristique (1) (1).png" alt="Arbre Euristique" >
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                 <div id="caption"></div>
+            </div>
         </div>
+        
+        <!-- <div class="img_appli">
+            <img src="./asset/projets/ligues/Arbre Heuristique (1) (1).png">
+        </div> -->
     </div>
     <!-- MCD -->
     <h2 class="h2_ligues" id="mcd_ligues">
@@ -209,5 +227,6 @@
         </div>
     <div>
 </main>
+<script src="./js/clic_pop_up_arbre.js"></script>
 </body>
 </html>

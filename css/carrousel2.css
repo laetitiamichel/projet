@@ -120,7 +120,7 @@
     background-color: var(--bgcolor-theme);
     margin: 1rem;
     transition: transform 0.2s, color 0.2s;
-    user-select: none;
+    user-select: none; /* retirer le / */
   }
   
   /* First */
