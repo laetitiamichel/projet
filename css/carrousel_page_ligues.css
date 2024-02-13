@@ -1,20 +1,13 @@
-:root{
-    --bgcolor-theme: #BFAE9F;
-    --bgcolor: #fff;
-    --text-color: #73655D;
-    --text-deux: #0d0a08;
-  }
-
-  .container2{
+.container2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
   }
   .slider {
     width: 100%;
-    min-height: 100vh/* 385px */;
+    min-height: 100vh;
   }
   .slider input {
     display: none;
@@ -24,9 +17,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* height: 100%;
-    width: 100%; */
-    /* max-width: 24rem; */
   }
   .cardtitle {
     display: flex;
@@ -34,24 +24,14 @@
     justify-content: center;
     font-weight: bold;
     margin: .1rem;
-  /*   --tw-text-opacity: 1; */
     color: var(--text-color);
     text-align: center;
   }
   .cardimg img {
-    /* margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.75rem;
-    margin-bottom: 2.75rem; */
-    /* max-height: 6rem; */
-    /* border-radius: 9999px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem;
-    
-    /* margin-top: 2.75rem; */
-    
+    margin: 2rem;  
   }
   .carddescription {
     display: flex;
@@ -81,13 +61,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
-    height: 90%; 
+    /* gestion taille des diapos */
+    width: 50%;
+    height: 95%; 
     border-radius: 1.5rem;
     border-width: 0.2rem;
     --tw-border-opacity: 1;
-   /*  border-color: rgba(30, 58, 138, var(--tw-border-opacity)); */
-    /* top: 1rem; */
     position: absolute;
     box-sizing: border-box;
     background-color: #fff;
@@ -100,8 +79,9 @@
     cursor: pointer;
   }
 .testimonials .item img {
-    width: 43rem;
-    height: 27rem;
+    /* gestion tailles des images */
+    width: 60rem;
+    height: 30rem;
   }
 
   .dots {
@@ -265,5 +245,3 @@
   #t-5:checked ~ .testimonials label[for="t-5"] {
     z-index: 4;
   }
-  
- 

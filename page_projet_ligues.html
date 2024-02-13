@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/fredericka-the-great">
   
     
-    <link rel="stylesheet" href="./css/carrousel2.css">
+    <link rel="stylesheet" href="./css/carrousel_page_ligues.css">
     <link rel="stylesheet" href="./css/main_ligues.css">
 
     <title>Page LIGUES</title>
@@ -46,6 +46,7 @@
             <li><a class="menu__item" href="#arbre_ligues">Arbre</a></li>
             <li><a class="menu__item" href="#mcd_ligues">MCD</a></li>
             <li><a class="menu__item" href="#bdd_ligues">Base de Données</a></li>
+            <li><a class="menu__item" href="index.html">Accueil Portfolio</a></li>
         </ul>
     </div>
 
@@ -94,7 +95,8 @@
     <div class="container">
         <p class="p_ligues">
             L'objectif de cet arbre est de représenter chaque menu et chaque option par un noeud.
-            </br>Cet arbre a été réalisé sur le site FIGMA:
+            </br>Cet arbre a été réalisé sur le 
+            <a href="https://www.figma.com/file/nKBFi9b7gsDLVyzOhAWF3z/Arbre-Heuristique?type=whiteboard&node-id=0-1&t=q7OVmbPWc5gU94zu-0">site FIGMA:</a> 
         </p>
         <div class="img_appli">
             <img src="./asset/projets/ligues/Arbre Heuristique (1) (1).png">
@@ -133,11 +135,79 @@
     <h2 class="h2_ligues" id="bdd_ligues">
         Base de Données
     </h2>
-    <div class="container">
-        <img src="./asset/projets/ligues/sql_bdd.png" class="img_bdd">
-        <img src="./asset/projets/ligues/sql_tables.png" class="img_bdd">
-        <img src="./asset/projets/ligues/table_employe_foreignKey.png" class="img_bdd">
+    <div class="container2">
+        <div class="slider">
+            <input type="radio" name="testimonial" id="t-1" checked/>
+            <input type="radio" name="testimonial" id="t-2" />
+            <input type="radio" name="testimonial" id="t-3" />
+            <input type="radio" name="testimonial" id="t-4" />
+            <input type="radio" name="testimonial" id="t-5" />
+    
+            <div class="testimonials mb-8">
+                <label class="item" for="t-1">
+                    <div class="mycard" id="projet_1">
+                        <div>
+                            <img src="./asset/projets/ligues/sql_bdd.png" alt="nivel5" class="cardimg" />
+                            <p class="carddescription">Création BDD</p>
+                        </div>
+                    <div>
+                   
+                        </div>
+                    </div>
+                </label> 
+                <label class="item" for="t-2">
+                    <div class="mycard" id="projet_2">
+                        <div>
+                            <img src="./asset/projets/ligues/sql_tables.png" alt="nivel5" class="cardimg" />
+                            <p class="carddescription">Création des tables</p>
+                        </div>
+                    <div>       
+                        </div>
+                    </div>
+                </label>
+                <label class="item" for="t-3">
+                    <div class="mycard" id="projet_3">
+                        <div>
+                            <img src="./asset/projets/ligues/table_employe_foreignKey.png" alt="nivel5" class="cardimg" />
+                            <p class="carddescription">Foreign Key</p>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </label>       
+                <label class="item" for="t-4">
+                    <div class="mycard" id="projet_4">
+                        <div>
+                            <img src="./asset/projets/ligues/LARAGON_table_employes.png" alt="nivel5" class="cardimg" />
+                            <p class="carddescription">Table Employés</p>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </label>
+                <label class="item" for="t-5">
+                    <div class="mycard" id="projet_5">
+                        <div>
+                            <img src="./asset/projets/ligues/LARAGON_table_ligues.png" alt="nivel5" class="cardimg" />
+                            <p class="carddescription">Table Ligues</p>
+                        </div>
+                        <div>       
+                        </div>
+                    </div>
+                </label>
+                
     </div>
+            <div class="dots">
+              <label for="t-1"></label>
+              <label for="t-2"></label>
+              <label for="t-3"></label>
+              <label for="t-4"></label>
+              <label for="t-5"></label>
+    
+            </div>
+          </div>
+        </div>
+    <div>
 </main>
 </body>
 </html>
