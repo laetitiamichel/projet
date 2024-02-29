@@ -1,7 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/jeany-gifary');
 @import url('https://fonts.cdnfonts.com/css/sphere-next');
 
-
+:root{
+  --bgcolor-theme: #BFAE9F;
+  --bgcolor: #fff;
+  --text-color: #73655D;
+  --text-deux: #0d0a08;
+}
 /* PAGE DE DROITE PRESENTATION: */
 
 .container-presentation{
@@ -9,7 +14,28 @@
     overflow-x: hidden;
     padding-top: 5rem;
     width: 100%;
-} 
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #e9dbbf ; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bgcolor-theme); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color); 
+}
   /* = IMG + P */
 .container-logo{  
   display: flex;

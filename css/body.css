@@ -12,13 +12,15 @@ html{ /* sélecteur propriété valeur */
   font-size: 62.5%;  /* 1.000rem root em 10px */
   scroll-behavior: smooth;
 }
+
 body{
   font: 1.6rem sans-serif;
   height: 100vh;
   margin: 0;
   padding: 0;
-  letter-spacing: 1px;
+  letter-spacing: 1px;  
 }
+
 h1,h2,h3,img,li{
   margin: 0;
   padding: 0;
@@ -26,10 +28,10 @@ h1,h2,h3,img,li{
   text-decoration: none;
 }
 
-header,figure,nav,main,ul,p{
+header,main,ul,p{
     margin: 0;
     padding: 0;
-    overflow: hidden;    
+       
 }
 :root{
   --bgcolor-theme: #BFAE9F;
