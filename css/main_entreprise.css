@@ -18,6 +18,7 @@ body{
   margin: 0;
   padding: 0;
   letter-spacing: 0.1rem;
+  line-height: 1.5;
 }
 h1,h2,h3,img,p,ul{
   margin: 0;
@@ -78,18 +79,38 @@ header,main{
   /* PRESENTATION */
 
 .p_entreprise{
-    text-align: center;
-    padding: 3rem;
-    line-height: 5rem;
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 2rem auto;
+    max-width: 70%;
+   
+  }
+  .p_entreprise_temoignage{
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 70%;
+    background-color: var(--text-color);
+    color: var(--bgcolor);
+    font-style: italic;
   }
   .u_presentation{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .u_entreprise{
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
     background-color: var(--bgcolor-theme);
-    width: 60%;
+    width: 70%;
     list-style: disc;
     padding: 5rem; 
   }
@@ -103,29 +124,94 @@ header,main{
   }
 
  .u_SN{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 1rem auto;
     padding: 3rem;
+    width: 70%;
   }
   .li_SN{
-    line-height: 1.7;
+    line-height: inherit;
     padding: 1rem;
+  }
+  .li_SN_a{
+    list-style: none;
+    line-height: 3;
+    padding: 1rem;
+  }
+  .span{
+      width: 10%;
+      height: 5%;
+      display: inline-block;
+      vertical-align: middle;
+  }
+  .p_entreprise_services{
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 1rem auto;
+    max-width: 70%;
+    font-size: 3rem;     
+    font-family: "Fredericka the Great", serif;
+    font-style: italic;
+    color: #0d0a08;
+  }
+  .li_SN-IT{
+    list-style-image: url('/asset/entreprise/icon/agreement_contract_business_handshake_icon_259246.svg');
+    line-height: 1.7;
+    width: 5rem;
+    height: 10rem;
   }
  .sous-titre-ul{
     font-size: 2rem;
-    padding: 2rem;
+    /* letter-spacing: 1rem; */
+    line-height: 3rem;
     margin: 2rem;
+    padding: 2rem;
+    font-family: "Fredericka the Great", serif;
+    
  }
  .img{
     display: flex;
     justify-content: center;
+    width: 80%;
     height: 70%;
+    margin: 1rem auto;
   }
+
+.u_presentation_csa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--text-color);
+  width: 80%;
+  margin: 1rem auto;
+  padding: 4rem;
+  color: var(--bgcolor);
+  font-size: x-large;
+}
+.lien_csa{
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  text-decoration: none;
+  color: var(--bgcolor);
+  font-style: italic;
+  font-size: x-large;
+  /* width: 100%; */
+}
+.span_csa{
+
+}
 
   /* MENU MURGER */
 .hamburger-menu{
     position:fixed;
     z-index: 10;
     display:block;
-    width:60%;
+    width:70%;
     margin:auto;
   }
   #menu__toggle {
@@ -191,7 +277,7 @@ header,main{
   }
   .menu__item {
     display: block;
-    padding: 3rem 4rem;
+    padding: 2rem 4rem;
     color: var(--bgcolor);
     font-family: 'Jeany Gifary', sans-serif;
     font-size: 6rem;
@@ -202,3 +288,128 @@ header,main{
   .menu__item:hover {
     background-color: var(--bgcolor-theme);
   }
+
+.flex_img{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 3rem;
+  gap: 1rem;
+}
+.card_partner{
+  width: 30rem;
+  height: 30rem;
+  perspective: 1000px;
+}
+.card-front_partner{
+  color:var(--text-color);
+  display: flex;
+  align-items: center;
+  border: 1rem solid var(--bgcolor-theme);
+  border-radius: 1rem;
+  justify-content: center;
+  transform: rotateY(0deg);
+}
+.card-front_partner,
+.card-back_partner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.card-back_partner{
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  border: 1rem solid var(--bgcolor-theme);
+  border-radius: 1rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  transform: rotateY(180deg);
+  
+}
+.logo_partner{
+  width: 100%;
+}
+.card_partner{
+  margin: 2rem;
+  padding: 2rem;
+ 
+}
+.card_partner:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.ul_card_partner{
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+/* .logo_partner{
+  width: 20%;
+  height: 15%;
+}  */
+/*   CARDS */
+.flex_cards{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  padding: 4rem;
+  gap: 2rem;
+}
+.card {
+  width: 20rem;
+  height: 30rem;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: var(--bgcolor-theme);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 1rem solid var(--bgcolor-theme);
+  border-radius: 1rem;
+  justify-content: center;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  background-color: var(--text-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 1rem solid var(--text-color);
+  border-radius: 1rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  transform: rotateY(180deg);
+}
+.img card{
+  width: 70%;
+}
