@@ -76,6 +76,23 @@ header,main{
     font-family: "Fredericka the Great", serif;
     font-size: 3rem;
 }
+.h2_nombre{
+    display: inline-flex;
+    margin-left: 7rem;
+    font-family: "Fredericka the Great", serif;
+    font-size: 4rem;
+    color: var(--text-color);
+    text-align: center;
+}
+.h4_nombre{
+  display: inline-flex;
+  font-family: "Fredericka the Great", serif;
+  font-size: 3rem;
+  color: var(--text-color);
+  text-align: center;
+  padding-left: 2rem;
+}
+
   /* PRESENTATION */
 
 .p_entreprise{
@@ -127,10 +144,9 @@ header,main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     margin: 1rem auto;
     padding: 3rem;
-    width: 70%;
+    width: 75%;
   }
   .li_SN{
     line-height: inherit;
@@ -140,6 +156,7 @@ header,main{
     list-style: none;
     line-height: 3;
     padding: 1rem;
+    /* margin-left: 30%; */
   }
   .span{
       width: 10%;
@@ -173,12 +190,17 @@ header,main{
     font-family: "Fredericka the Great", serif;
     
  }
- .img{
+ .img img{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 80%;
-    height: 70%;
-    margin: 1rem auto;
+    align-items: center;
+    width: 55%;
+    height: 50%;
+    margin: 4rem auto;
+    border-color: var(--bgcolor-theme);
+    border-width: 1rem;
+    border-style: double;
   }
 
 .u_presentation_csa{
