@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", (e)=>{
         //PROJET 2:
         let projet_2 = document.getElementById("projet_2");
         projet_2.addEventListener("click",()=>{
-        window.open("https://hackmd.io/f46MK54fTO2tO9Otf8E7QA?view","blank")});
+        window.open("page_projet_php.html","blank")});
 
         //PROJET 3:
         let projet_3 = document.getElementById("projet_3");
