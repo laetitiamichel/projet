@@ -1,5 +1,5 @@
 # projet
-portfolio [home page]( https://laetitiamichel.github.io/projet/)
+portfolio [home page](https://laetitiamichel.github.io/projet/)
 
 Gloomaps ![structure](./asset/glooMaps.png)
 
