@@ -7,14 +7,25 @@
   --text-color: #73655D;
   --text-deux: #0d0a08;
 }
-/* PAGE DE DROITE PRESENTATION: */
-
-.container-presentation{
-    overflow: scroll;
-    overflow-x: hidden;
-    padding-top: 5rem;
-    width: 100%;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
 }
+/* PAGE DE DROITE PRESENTATION: */
+.container-presentation{
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-top: 5rem;
+  width: 100%;
+  position: relative;
+}
+.page_de_gauche,
+.page_de_droite {
+    flex: 1 1 50%; /* Les pages de gauche et de droite occupent chacune 50% de l'espace */
+    height: 100vh;
+  }
+
 /* width */
 ::-webkit-scrollbar {
   width: 20px;
@@ -62,10 +73,54 @@
     cursor: url("../asset/presentation/clic_curseur.png"), pointer;
   }  
 
-  /* PAGE DE GAUCHE */
-  .page_de_gauche{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+  .imageFond img{
+    width: 70%;
+    height: auto;
+    display: block; /* Pour supprimer les marges par défaut */
+    margin: 0 auto; /* Pour centrer horizontalement */
   }
+
+ /*  bouton télécherger CV */
+ .cube_CV {
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
+  transform-style: preserve-3d;
+  transform-origin: 100% 50%;
+  width: 10em;
+  height: 4em;
+ }
+ 
+ .cube_CV:hover {
+  transform: rotateX(-90deg);
+ }
+ .side {
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  height: 4em;
+  width: 10em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 1.5em;
+  font-weight: bold;
+ }
+ 
+ .top {
+  background: #fff ;
+  color: #73655D;
+  transform: rotateX(90deg) translate3d(0, 0, 2em);
+  box-shadow: inset 0 0 0 5px var(--bgcolor-theme);
+ }
+ 
+ 
+ .front {
+  background: #fff ;
+  color: #73655D;
+  box-shadow: inset 0 0 0 5px var(--bgcolor-theme);
+  transform: translate3d(0, 0, 2em);
+ }
   
