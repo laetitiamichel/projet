@@ -3,12 +3,6 @@
 
 /* H3 VEILLE TECHNO */
 
-footer{
-  display:block;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-}
 .pdf{
     height: 70vh;
     display:flex;
