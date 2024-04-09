@@ -7,23 +7,25 @@
   --text-color: #73655D;
   --text-deux: #0d0a08;
 }
-.container {
+.container_presentation {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
 }
 /* PAGE DE DROITE PRESENTATION: */
-.container-presentation{
+div.container-presentation{
   overflow: scroll;
   overflow-x: hidden;
   padding-top: 5rem;
   width: 100%;
   position: relative;
 }
-.page_de_gauche,
-.page_de_droite {
+.page_de_gauche_presentation,
+.page_de_droite_presentation {
     flex: 1 1 50%; /* Les pages de gauche et de droite occupent chacune 50% de l'espace */
     height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
 /* width */
@@ -70,7 +72,7 @@
 .logo{
     width: 30%;
     justify-content: center;
-    cursor: url("../asset/presentation/clic_curseur.png"), pointer;
+    cursor: pointer;
   }  
 
 
@@ -81,16 +83,4 @@
     margin: 0 auto; /* Pour centrer horizontalement */
   }
 
- /*  bouton télécherger CV */
-.cv_telecharger{
-  background-color: var(--bgcolor-theme);
-  padding: 2rem;
-  margin: 2rem;
-  width: 100%;
-  display: block;
-  border-radius: 1rem;
-  text-decoration: none;
-  color: #0d0a08;
-  text-align: center;
-}
-  
+ 

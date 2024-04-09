@@ -24,9 +24,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* height: 100%;
-    width: 100%; */
-    /* max-width: 24rem; */
   }
   .cardtitle {
     display: flex;
@@ -34,24 +31,14 @@
     justify-content: center;
     font-weight: bold;
     margin: .1rem;
-  /*   --tw-text-opacity: 1; */
     color: var(--text-color);
     text-align: center;
   }
   .cardimg img {
-    /* margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.75rem;
-    margin-bottom: 2.75rem; */
-    /* max-height: 6rem; */
-    /* border-radius: 9999px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 2rem;
-    
-    /* margin-top: 2.75rem; */
-    
   }
   .carddescription {
     display: flex;
