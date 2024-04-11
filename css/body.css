@@ -219,6 +219,7 @@ footer{
   padding: 3rem;
   font: bold;
   font-size: large;
+  
 }
 .footer_{
   display: flex;
@@ -229,6 +230,7 @@ footer{
   margin:2rem;
   text-decoration: none;
   color: var(--text-deux);
+  
   
 }
 span{
