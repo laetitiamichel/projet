@@ -295,6 +295,31 @@ span{
   .imageFondHome{
     visibility: hidden;
   }
+  .hamburger-menu{
+    position:fixed;
+    z-index: 10;
+    display:block;
+    width:60%;
+    margin:auto;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    right: 0 !important;
+  }
+  
   .menu__btn {
     position: fixed;
     margin-top: 2rem;
@@ -304,6 +329,26 @@ span{
     height: 4rem;
     cursor: pointer;
     z-index: 3;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;  
+    width: 100%;
+    height: 0.3rem;
+    background-color: #32261d;
+    transition-duration: .60s;
+    cursor: pointer;
+    
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -1rem;  
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 1rem; 
   }
   .menu__box {
     display: block;
@@ -328,6 +373,9 @@ span{
     letter-spacing: .7rem;
     text-decoration: none;
     transition-duration: .60s;
+  }
+  .menu__item:hover {
+    background-color: var(--bgcolor-theme);
   }
 
   .imageFond img{
@@ -396,15 +444,18 @@ div.testimonials {
   height: 100%;
   margin: 5rem auto;  
 }
-#cv_telecharger{
+#page_entreprise{
   margin: 2rem auto; 
   background-color: var(--bgcolor-theme);
   padding: 2rem;
   width: 80%;
-  display: block;
+/*   display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center !important;  
   border-radius: 1rem;
   text-decoration: none;
-  color: #0d0a08;
+  color: #fff;
   text-align: center;
 }
 #responsiveHide{
