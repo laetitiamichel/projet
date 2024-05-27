@@ -398,6 +398,16 @@ div.testimonials {
   display:block;
   height: 100%;
   margin: 5rem auto;  
-
+}
+#cv_telecharger{
+  margin: 2rem auto; 
+  background-color: var(--bgcolor-theme);
+  padding: 2rem;
+  width: 60%;
+  display: block;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #0d0a08;
+  text-align: center;
 }
 }
