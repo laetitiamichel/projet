@@ -342,7 +342,7 @@ span{
 }
 .page_de_droite_presentation{
   max-height: 100vh;
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 div.container-presentation{
   overflow: scroll;
@@ -350,11 +350,14 @@ div.container-presentation{
   padding-top: 5rem;
   width: 100%;
   position: relative;
+  margin-top: 0 !important;
+  padding-top: 0;
 }
 .container_presentation{
   display: block;
   overflow-x: hidden;
   height: auto;
+  
 }
 /* PROJETS */
 div.testimonials .item {
@@ -397,14 +400,14 @@ div.testimonials {
   margin: 2rem auto; 
   background-color: var(--bgcolor-theme);
   padding: 2rem;
-  width: 60%;
+  width: 80%;
   display: block;
   border-radius: 1rem;
   text-decoration: none;
   color: #0d0a08;
   text-align: center;
 }
-.sidefront{
+#responsiveHide{
   display: none;
   visibility: hidden;
 }
